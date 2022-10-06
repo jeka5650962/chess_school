@@ -28,6 +28,7 @@ body {
 
     &__container {
         display: flex;
+        justify-content: space-between;
         min-height: 110px;
         align-items: center;
     }
@@ -71,7 +72,7 @@ body {
         }
 
         &:nth-child(1) > .menu__link {
-            padding-left: 25px;
+            padding-left: 28px;
         }
     }
 
@@ -95,6 +96,10 @@ body {
             margin-right: 40px;
         }
 
+        &:nth-child(1) {
+            margin-right: 52px;
+        }
+
         &:nth-child(1)::before {
             content: '';
             background: url("../img/header/geo.svg") 0 0 no-repeat;
@@ -102,6 +107,17 @@ body {
             width: 17px;
             height: 20px;
             position: absolute;
+            top: -3px;
+        }
+
+        &:nth-child(1)::after {
+            content: '';
+            background: url("../img/header/arrow-bottom.svg") 0 0 no-repeat;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            top: 4px;
         }
 
         &:nth-child(3)::before {
@@ -111,14 +127,15 @@ body {
             width: 17px;
             height: 18px;
             position: absolute;
+            top: -2px;
         }
 
         &:nth-child(1) > .contacts__link {
-            padding-left: 17px;
+            padding: 0 10px 0 26px;
         }
 
         &:nth-child(3) > .contacts__link {
-            padding-left: 17px;
+            padding-left: 26px;
         }
     }
 
