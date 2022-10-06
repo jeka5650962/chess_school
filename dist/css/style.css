@@ -159,20 +159,23 @@ body {
   position: absolute;
   top: -2px;
 }
-.contacts__item:nth-child(1) > .contacts__link {
+.contacts__item:nth-child(1) .contacts__link {
   padding: 0 10px 0 26px;
 }
-.contacts__item:nth-child(3) > .contacts__link {
+.contacts__item:nth-child(3) .contacts__link {
   padding-left: 26px;
 }
 .contacts__link {
   font-weight: 500;
   color: #000;
 }
-.contacts__link span {
+.contacts__link--location {
   text-decoration: underline;
 }
-.contacts__link-phone {
+.contacts__link--location:hover {
+  text-decoration: none;
+}
+.contacts__link--phone {
   font-size: 16px;
   color: #00093c;
 }

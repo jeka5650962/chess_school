@@ -126,11 +126,11 @@ body {
             top: -2px;
         }
 
-        &:nth-child(1) > .contacts__link {
+        &:nth-child(1) .contacts__link {
             padding: 0 10px 0 26px;
         }
 
-        &:nth-child(3) > .contacts__link {
+        &:nth-child(3) .contacts__link {
             padding-left: 26px;
         }
     }
@@ -139,11 +139,15 @@ body {
         font-weight: 500;
         color: #000;
 
-        span {
+        &--location {
             text-decoration: underline;
         }
 
-        &-phone {
+        &--location:hover {
+            text-decoration: none;
+        }
+
+        &--phone {
             font-size: 16px;
             color: #00093c;
         }
