@@ -1,38 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;
-
-500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
   border: 0;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-:focus,
-:active {
+:focus, :active {
   outline: none;
 }
 
-a:focus,
-a:active {
+a:focus, a:active {
   outline: none;
 }
 
-nav,
-footer,
-header,
-aside {
+nav, footer, header, aside {
   display: block;
 }
 
-html,
-body {
+html, body {
   height: 100%;
   width: 100%;
   line-height: 1;
@@ -42,9 +33,7 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-input,
-button,
-textarea {
+input, button, textarea {
   font-family: inherit;
 }
 
@@ -61,8 +50,7 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a,
-a:visited {
+a, a:visited {
   text-decoration: none;
 }
 
@@ -78,12 +66,7 @@ img {
   vertical-align: top;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: 400;
 }
@@ -97,13 +80,8 @@ body {
 
 .wrapper {
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   min-height: 100%;
 }
 
@@ -114,47 +92,51 @@ body {
 }
 
 /* ---------------------------------- header ---------------------------------- */
-
 .header {
   background: #dcdcdc;
 }
-
 .header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   min-height: 110px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .header__logo {
   margin-right: 63px;
 }
-
 .menu__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
-
+.menu__item:not(:last-child) {
+  margin-right: 40px;
+}
+.menu__item:first-child::before {
+  content: "";
+  background: url("../img/header/all-courses.svg") 0 0 no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 16px;
+  position: absolute;
+  top: -1px;
+}
+.menu__item:first-child > .menu__link {
+  padding-left: 25px;
+}
 .menu__link {
   font-weight: 500;
   color: #000;
 }
 
 .contacts__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
+.contacts__item:not(:last-child) {
+  margin-right: 40px;
+}
 .contacts__link {
   font-weight: 500;
   color: #000;
 }
 
 /* ---------------------------------- main ---------------------------------- */
-
 /* ---------------------------------- footer ---------------------------------- */

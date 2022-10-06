@@ -52,9 +52,27 @@ body {
 
     &__list {
         display: flex;
+        position: relative;
     }
 
     &__item {
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+
+        &:first-child::before {
+            content: '';
+            background: url("../img/header/all-courses.svg") 0 0 no-repeat;
+            display: inline-block;
+            width: 20px;
+            height: 16px;
+            position: absolute;
+            top: -1px;
+        }
+
+        &:first-child > .menu__link {
+            padding-left: 25px;
+        }
     }
 
     &__link {
@@ -72,6 +90,9 @@ body {
     }
 
     &__item {
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
     }
 
     &__link {
@@ -81,7 +102,6 @@ body {
 }
 
 /* ---------------------------------- main ---------------------------------- */
-
 
 
 /* ---------------------------------- footer ---------------------------------- */
