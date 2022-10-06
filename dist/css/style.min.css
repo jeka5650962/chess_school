@@ -121,6 +121,9 @@ body {
   font-weight: 500;
   color: #000;
 }
+.menu__link:hover {
+  text-decoration: underline;
+}
 
 .contacts__list {
   display: flex;
