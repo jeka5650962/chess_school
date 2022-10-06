@@ -24,8 +24,6 @@ body {
 /* ---------------------------------- header ---------------------------------- */
 
 .header {
-    background: #dcdcdc;
-
     &__container {
         display: flex;
         justify-content: space-between;
@@ -140,6 +138,15 @@ body {
     &__link {
         font-weight: 500;
         color: #000;
+
+        span {
+            text-decoration: underline;
+        }
+
+        &-phone {
+            font-size: 16px;
+            color: #00093c;
+        }
     }
 }
 
