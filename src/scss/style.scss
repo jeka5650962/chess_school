@@ -60,7 +60,7 @@ body {
             margin-right: 40px;
         }
 
-        &:first-child::before {
+        &:nth-child(1)::before {
             content: '';
             background: url("../img/header/all-courses.svg") 0 0 no-repeat;
             display: inline-block;
@@ -70,7 +70,7 @@ body {
             top: -1px;
         }
 
-        &:first-child > .menu__link {
+        &:nth-child(1) > .menu__link {
             padding-left: 25px;
         }
     }
@@ -87,11 +87,38 @@ body {
 
     &__list {
         display: flex;
+        position: relative;
     }
 
     &__item {
         &:not(:last-child) {
             margin-right: 40px;
+        }
+
+        &:nth-child(1)::before {
+            content: '';
+            background: url("../img/header/geo.svg") 0 0 no-repeat;
+            display: inline-block;
+            width: 17px;
+            height: 20px;
+            position: absolute;
+        }
+
+        &:nth-child(3)::before {
+            content: '';
+            background: url("../img/header/login.svg") 0 0 no-repeat;
+            display: inline-block;
+            width: 17px;
+            height: 18px;
+            position: absolute;
+        }
+
+        &:nth-child(1) > .contacts__link {
+            padding-left: 17px;
+        }
+
+        &:nth-child(3) > .contacts__link {
+            padding-left: 17px;
         }
     }
 
