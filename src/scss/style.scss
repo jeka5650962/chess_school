@@ -28,32 +28,15 @@ body {
 /* ---------------------------------- header ---------------------------------- */
 
 .header {
-    &__container {
-    }
-
     &__body {
         display: flex;
         justify-content: space-between;
         min-height: 110px;
         align-items: center;
     }
-
-    &__logo {
-        img {
-        }
-    }
-
-    &__menu {
-    }
-
-    &__contacts {
-    }
 }
 
 .menu {
-    &__body {
-    }
-
     &__list {
         display: flex;
         position: relative;
@@ -90,9 +73,6 @@ body {
 }
 
 .contacts {
-    &__body {
-    }
-
     &__list {
         display: flex;
         position: relative;
