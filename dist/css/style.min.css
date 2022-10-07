@@ -92,7 +92,7 @@ body {
 }
 
 /* ---------------------------------- header ---------------------------------- */
-.header__container {
+.header__body {
   display: flex;
   justify-content: space-between;
   min-height: 110px;
@@ -114,7 +114,7 @@ body {
   position: absolute;
   top: -1px;
 }
-.menu__item:nth-child(1) > .menu__link {
+.menu__item:nth-child(1) .menu__link {
   padding-left: 28px;
 }
 .menu__link {

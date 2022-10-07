@@ -25,6 +25,9 @@ body {
 
 .header {
     &__container {
+    }
+
+    &__body {
         display: flex;
         justify-content: space-between;
         min-height: 110px;
@@ -67,7 +70,7 @@ body {
             top: -1px;
         }
 
-        &:nth-child(1) > .menu__link {
+        &:nth-child(1) .menu__link {
             padding-left: 28px;
         }
     }
