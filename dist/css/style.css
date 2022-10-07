@@ -93,19 +93,53 @@ body {
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 15px;
+  box-sizing: content-box;
 }
 
 /* ---------------------------------- header ---------------------------------- */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #999;
+  z-index: 2;
+}
 .header__body {
   display: flex;
   justify-content: space-between;
   min-height: 110px;
   align-items: center;
+  position: relative;
+}
+.header__logo {
+  position: relative;
+  z-index: 3;
+}
+.header__burger {
+  display: none;
+}
+.header__info {
+  display: flex;
+  justify-content: space-between;
+}
+.header__menu {
+  margin-right: 68px;
 }
 
 .menu__list {
   display: flex;
   position: relative;
+  z-index: 2;
 }
 .menu__item:not(:last-child) {
   margin-right: 40px;
@@ -133,6 +167,7 @@ body {
 .contacts__list {
   display: flex;
   position: relative;
+  z-index: 2;
 }
 .contacts__item:not(:last-child) {
   margin-right: 40px;
@@ -188,5 +223,50 @@ body {
   color: #00093c;
 }
 
+/* ---------------------------------- @media header ---------------------------------- */
+@media (max-width: 1230px) {
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+  }
+  .header__burger span {
+    background: #000;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+  }
+  .header__burger::before, .header__burger::after {
+    content: "";
+    background: #000;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .header__burger::before {
+    top: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+  .header__info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: antiquewhite;
+    padding-top: 150px;
+  }
+}
 /* ---------------------------------- main ---------------------------------- */
+.main {
+  padding-top: 130px;
+}
+
 /* ---------------------------------- footer ---------------------------------- */
