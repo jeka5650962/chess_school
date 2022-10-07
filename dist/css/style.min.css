@@ -225,6 +225,9 @@ body {
 
 /* ---------------------------------- @media header ---------------------------------- */
 @media (max-width: 1230px) {
+  body.lock {
+    overflow: hidden;
+  }
   .header__body {
     min-height: 80px;
   }
@@ -245,6 +248,7 @@ body {
     width: 100%;
     height: 2px;
     top: 9px;
+    transition: all 0.3s ease 0s;
   }
   .header__burger::before, .header__burger::after {
     content: "";
@@ -253,6 +257,7 @@ body {
     width: 100%;
     height: 2px;
     left: 0;
+    transition: all 0.3s ease 0s;
   }
   .header__burger::before {
     top: 0;
@@ -260,9 +265,20 @@ body {
   .header__burger::after {
     bottom: 0;
   }
+  .header__burger.active span {
+    transform: scale(0);
+  }
+  .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header__burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
   .header__info {
     position: fixed;
-    top: 0;
+    top: -100%;
     left: 0;
     width: 100%;
     height: 100%;
@@ -270,10 +286,15 @@ body {
     padding: 120px 15px 15px 15px;
     flex-direction: column;
     justify-content: flex-start;
+    transition: all 0.3s ease 0s;
+    overflow: auto;
+  }
+  .header__info.active {
+    top: 0;
   }
   .header__menu {
     order: 2;
-    margin: 30px 0 0 0;
+    margin: 40px 0 0 0;
   }
   .header__contacts {
     order: 1;
@@ -282,7 +303,7 @@ body {
     display: block;
   }
   .menu__item:not(:last-child) {
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
   }
   .menu__item:nth-child(1)::before {
     background: none;
@@ -291,7 +312,25 @@ body {
     padding: 0;
   }
   .menu__link {
-    font-size: 20px;
+    font-size: 21px;
+  }
+  .contacts__item:nth-child(1)::before {
+    width: 18px;
+    height: 21px;
+    top: -2px;
+  }
+  .contacts__item:nth-child(1)::after {
+    width: 13px;
+    height: 13px;
+    top: 6px;
+  }
+  .contacts__item:nth-child(3)::before {
+    width: 18px;
+    height: 19px;
+    top: 0;
+  }
+  .contacts__link {
+    font-size: 18px;
   }
 }
 /* ---------------------------------- main ---------------------------------- */
@@ -299,4 +338,10 @@ body {
   padding: 130px 0 0 0;
 }
 
+/* ---------------------------------- @media main ---------------------------------- */
+@media (max-width: 1230px) {
+  .main {
+    padding: 100px 0 0 0;
+  }
+}
 /* ---------------------------------- footer ---------------------------------- */
