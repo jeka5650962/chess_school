@@ -71,32 +71,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-html, body {
-  height: 100%;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #000;
-}
-
-.wrapper {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
-
-[class*=__container] {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 0 15px;
-  box-sizing: content-box;
-}
-
-/* ---------------------------------- header ---------------------------------- */
 .header {
   position: fixed;
   width: 100%;
@@ -333,6 +307,31 @@ body {
     font-size: 18px;
   }
 }
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+[class*=__container] {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
+
 /* ---------------------------------- main ---------------------------------- */
 .main {
   padding: 130px 0 0 0;
