@@ -200,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #00093c;
 }
 
-/* ---------------------------------- @media header ---------------------------------- */
+/* ---------------------------------- @media header */
 @media (max-width: 1230px) {
   body.lock {
     overflow: hidden;
@@ -259,7 +259,7 @@ h1, h2, h3, h4, h5, h6 {
     bottom: 9px;
   }
   .header__menu {
-    margin: 0 0 30px 0;
+    margin: 0 0 60px 0;
   }
   .header__info {
     position: fixed;
@@ -283,7 +283,113 @@ h1, h2, h3, h4, h5, h6 {
   .menu__item:not(:last-child) {
     margin: 0 0 30px 0;
   }
+  .contacts__list {
+    flex-direction: column;
+  }
+  .contacts__item:nth-child(1) {
+    margin: 0 0 20px 0;
+  }
+  .contacts__item:not(:last-child) {
+    margin: 0 0 20px 0;
+  }
+  .contacts__item:nth-child(3)::before {
+    top: auto;
+  }
+  .contacts__link--phone {
+    font-weight: 600;
+    font-size: 18px;
+  }
 }
+/* ---------------------------------- @media main */
+/* ---------------------------------- section banner ---------------------------------- */
+.banner {
+  padding: 110px 0 0 0;
+  background: #00093c;
+  color: #fff;
+}
+.banner__body {
+  display: flex;
+  justify-content: space-between;
+}
+.banner__info {
+  padding: 40px 0 30px 0;
+}
+.banner__title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 51px;
+  margin: 0 0 11px 0;
+}
+.banner__desc {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0 0 28px 0;
+}
+.banner__conditions {
+  font-weight: 500;
+  line-height: 17px;
+  display: flex;
+  margin: 0 0 32px 0;
+}
+.banner__duration {
+  margin: 0 32px 0 0;
+}
+.banner__duration::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(0.25turn, #f7941d, #27aae1);
+  display: block;
+  margin: 0 0 7px 0;
+}
+.banner__mode::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(0.25turn, #f7941d, #27aae1);
+  display: block;
+  margin: 0 0 7px 0;
+}
+.banner__cost {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  margin: 0 0 33px 0;
+  display: flex;
+}
+.banner__cost span::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(0.25turn, #f7941d, #27aae1);
+  display: block;
+  margin: 0 0 7px 0;
+}
+.banner__bonus {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  margin: 0 0 12px 0;
+}
+.banner__recom {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 24px 0;
+}
+.banner__btn {
+  font-weight: 700;
+  line-height: 26px;
+  padding: 12px 20px;
+  background: #f7941d;
+  border-radius: 6px;
+  color: #fff;
+  transition: all 0.3s ease 0s;
+}
+.banner__btn:hover {
+  background: #ffae4d;
+}
+/* ---------------------------------- @media section banner */
 html, body {
   height: 100%;
 }
@@ -308,18 +414,3 @@ body {
   padding: 0 15px;
   box-sizing: content-box;
 }
-
-/* ---------------------------------- main ---------------------------------- */
-.main {
-  padding: 130px 0 0 0;
-  background: #00093c;
-  color: #fff;
-}
-
-/* ---------------------------------- @media main ---------------------------------- */
-@media (max-width: 1230px) {
-  .main {
-    padding: 80px 0 0 0;
-  }
-}
-/* ---------------------------------- footer ---------------------------------- */

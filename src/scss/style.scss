@@ -1,5 +1,7 @@
 @import "nullstyle";
 @import "header";
+@import "main";
+@import "footer";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 html, body {
@@ -26,22 +28,3 @@ body {
     padding: 0 15px;
     box-sizing: content-box;
 }
-
-/* ---------------------------------- main ---------------------------------- */
-
-.main {
-    padding: 130px 0 0 0;
-    background: #00093c;
-    color: #fff;
-}
-
-/* ---------------------------------- @media main ---------------------------------- */
-
-@media (max-width: 1230px) {
-    .main {
-        padding: 80px 0 0 0;
-    }
-}
-
-/* ---------------------------------- footer ---------------------------------- */
-
