@@ -532,6 +532,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .targets__item {
   padding: 0 10px;
+  position: relative;
 }
 .targets__item_1 {
   flex: 1 1 auto;
@@ -546,7 +547,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 41px;
   display: block;
   position: absolute;
-  bottom: 82px;
+  top: 3px;
 }
 .targets__item_3 {
   flex: 0 0 180px;
@@ -558,7 +559,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 46px;
   display: block;
   position: absolute;
-  bottom: 82px;
+  top: -2px;
 }
 .targets__item_4 {
   flex: 0 0 180px;
@@ -570,7 +571,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 49px;
   display: block;
   position: absolute;
-  bottom: 82px;
+  top: -5px;
 }
 .targets__item_5 {
   flex: 0 0 180px;
@@ -582,7 +583,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 43px;
   display: block;
   position: absolute;
-  bottom: 82px;
+  top: 1px;
 }
 .targets__title {
   font-weight: 700;
