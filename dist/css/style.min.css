@@ -307,6 +307,27 @@ h1, h2, h3, h4, h5, h6 {
   background: #00093c;
   color: #fff;
 }
+.banner__container {
+  position: relative;
+}
+.banner__container::after {
+  content: "";
+  width: 99px;
+  height: 124px;
+  background: url("../img/section-banner/svg/horse.svg") 0 0 no-repeat;
+  position: absolute;
+  top: 35px;
+  left: -109px;
+}
+.banner__container::before {
+  content: "";
+  width: 129px;
+  height: 268px;
+  background: url("../img/section-banner/svg/curve-1.svg") 0 0 no-repeat;
+  position: absolute;
+  bottom: -51px;
+  left: -227px;
+}
 .banner__body {
   display: flex;
   justify-content: space-between;
@@ -381,7 +402,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-size: 14px;
   line-height: 26px;
-  padding: 12px 20px;
+  padding: 12px 21px;
   background: #f7941d;
   border-radius: 6px;
   color: #fff;
@@ -420,12 +441,44 @@ h1, h2, h3, h4, h5, h6 {
   left: 37px;
 }
 .banner__item--3 {
-  width: 98.39px;
-  height: 81.73px;
+  width: 99px;
+  height: 82px;
   background: url("../img/section-banner/svg/triangle-1.svg") 0 0 no-repeat;
   position: absolute;
   top: 24px;
   left: 119px;
+}
+.banner__item--4 {
+  width: 401px;
+  height: 93px;
+  background: url("../img/section-banner/svg/curve-2.svg") 0 0 no-repeat;
+  position: absolute;
+  top: 179px;
+  left: -243px;
+}
+.banner__item--5 {
+  width: 341px;
+  height: 133px;
+  background: url("../img/section-banner/svg/curve-3.svg") 0 0 no-repeat;
+  position: absolute;
+  bottom: -42px;
+  left: -388px;
+}
+.banner__item--6 {
+  width: 340px;
+  height: 133px;
+  background: url("../img/section-banner/svg/curve-4.svg") 0 0 no-repeat;
+  position: absolute;
+  bottom: -33px;
+  right: -286px;
+}
+.banner__item--7 {
+  width: 138px;
+  height: 115px;
+  background: url("../img/section-banner/svg/triangle-2.svg") 0 0 no-repeat;
+  position: absolute;
+  top: 45px;
+  right: -248px;
 }
 
 /* ---------------------------------- @media section banner */
