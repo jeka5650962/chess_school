@@ -312,7 +312,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
 }
 .banner__info {
-  padding: 40px 0 30px 0;
+  padding: 40px 30px 30px 0;
 }
 .banner__title {
   font-weight: 700;
@@ -389,7 +389,57 @@ h1, h2, h3, h4, h5, h6 {
 .banner__btn:hover {
   background: #ffae4d;
 }
+.banner__image {
+  flex: 0 0 517px;
+  position: relative;
+  min-height: 480px;
+}
+.banner__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /* ---------------------------------- @media section banner */
+@media (max-width: 1230px) {
+  .banner {
+    padding: 60px 0 0 0;
+  }
+}
+@media (max-width: 1050px) {
+  .banner {
+    position: relative;
+  }
+  .banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00093c;
+    opacity: 0.85;
+    z-index: 2;
+  }
+  .banner__body {
+    flex-direction: column;
+  }
+  .banner__info {
+    position: relative;
+    z-index: 10;
+  }
+  .banner__image {
+    position: static;
+    min-height: auto;
+    flex: 0 1 auto;
+  }
+  .banner__image img {
+    object-position: bottom;
+  }
+}
 html, body {
   height: 100%;
 }
