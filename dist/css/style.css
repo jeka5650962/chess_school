@@ -333,7 +333,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 32px 0;
 }
 .banner__duration {
-  margin: 0 32px 0 0;
+  margin: 0 33px 0 0;
 }
 .banner__duration::before {
   content: "";
@@ -379,6 +379,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .banner__btn {
   font-weight: 700;
+  font-size: 14px;
   line-height: 26px;
   padding: 12px 20px;
   background: #f7941d;
@@ -401,6 +402,30 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 0;
   left: 0;
+}
+.banner__item--1 {
+  width: 100px;
+  height: 100px;
+  background: url("../img/section-banner/svg/cross.svg") 0 0 no-repeat;
+  position: absolute;
+  top: 161px;
+  right: 62px;
+}
+.banner__item--2 {
+  width: 128px;
+  height: 128px;
+  background: url("../img/section-banner/svg/circle.svg") 0 0 no-repeat;
+  position: absolute;
+  bottom: 42px;
+  left: 37px;
+}
+.banner__item--3 {
+  width: 98.39px;
+  height: 81.73px;
+  background: url("../img/section-banner/svg/triangle-1.svg") 0 0 no-repeat;
+  position: absolute;
+  top: 24px;
+  left: 119px;
 }
 
 /* ---------------------------------- @media section banner */
