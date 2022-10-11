@@ -430,6 +430,7 @@ h1, h2, h3, h4, h5, h6 {
   .banner__info {
     position: relative;
     z-index: 10;
+    padding: 40px 0 30px 0;
   }
   .banner__image {
     position: static;
@@ -438,6 +439,11 @@ h1, h2, h3, h4, h5, h6 {
   }
   .banner__image img {
     object-position: bottom;
+  }
+}
+@media (max-width: 425px) {
+  .banner__btn {
+    width: 100%;
   }
 }
 html, body {
