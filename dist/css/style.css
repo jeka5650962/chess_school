@@ -528,7 +528,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .targets__body {
   display: flex;
-  margin: 0 -10px;
+  margin: 0 -10px 142px -10px;
 }
 .targets__item {
   padding: 0 10px;
@@ -536,7 +536,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .targets__item_1 {
   flex: 1 1 auto;
-  position: relative;
   margin-top: -8px;
 }
 .targets__item_1::before {
@@ -624,6 +623,59 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 17px;
 }
 
+/* ---------------------------------- @media section targets */
+@media (max-width: 1300px) {
+  .targets__body {
+    position: relative;
+    padding-top: 100px;
+    flex-wrap: wrap;
+    margin-left: 240px;
+  }
+  .targets__item_1 {
+    position: absolute;
+    top: -50px;
+    left: -240px;
+    margin-left: 42px;
+  }
+  .targets__item_2 {
+    flex: 0 1 50%;
+  }
+  .targets__item_3 {
+    flex: 0 1 50%;
+  }
+  .targets__item_4 {
+    flex: 0 1 50%;
+    margin-top: 30px;
+  }
+  .targets__item_5 {
+    flex: 0 1 50%;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .targets__body {
+    flex-direction: column;
+  }
+  .targets__item_3 {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .targets__item_1 {
+    margin-left: 27px;
+  }
+  .targets__item_1::before {
+    scale: 0.8;
+  }
+  .targets__item_1::after {
+    scale: 0.8;
+    left: -46px;
+  }
+  .targets__message {
+    font-size: 14px;
+    max-width: 270px;
+  }
+}
 html, body {
   height: 100%;
 }
