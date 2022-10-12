@@ -16,10 +16,31 @@
 
         &_1 {
             flex: 1 1 auto;
+            position: relative;
+            margin-top: -8px;
+
+            &::before {
+                content: '';
+                background: url("../img/section-targets/svg/message.svg");
+                width: 352px;
+                height: 140px;
+                display: block;
+            }
+
+            &::after {
+                content: '';
+                background: url("../img/section-targets/owl.png");
+                width: 168px;
+                height: 189px;
+                display: block;
+                position: absolute;
+                top: 86px;
+                left: -30px;
+            }
         }
 
         &_2 {
-            flex: 0 0 180px;
+            flex: 0 0 200px;
 
             &::before {
                 content: '';
@@ -33,7 +54,7 @@
         }
 
         &_3 {
-            flex: 0 0 180px;
+            flex: 0 0 200px;
 
             &::before {
                 content: '';
@@ -47,7 +68,7 @@
         }
 
         &_4 {
-            flex: 0 0 180px;
+            flex: 0 0 200px;
 
             &::before {
                 content: '';
@@ -61,7 +82,7 @@
         }
 
         &_5 {
-            flex: 0 0 180px;
+            flex: 0 0 200px;
 
             &::before {
                 content: '';
@@ -73,6 +94,16 @@
                 top: 1px;
             }
         }
+    }
+
+    &__message {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 310px;
+        position: absolute;
+        top: 32px;
+        left: 30px;
     }
 
     &__title {

@@ -536,9 +536,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 .targets__item_1 {
   flex: 1 1 auto;
+  position: relative;
+  margin-top: -8px;
+}
+.targets__item_1::before {
+  content: "";
+  background: url("../img/section-targets/svg/message.svg");
+  width: 352px;
+  height: 140px;
+  display: block;
+}
+.targets__item_1::after {
+  content: "";
+  background: url("../img/section-targets/owl.png");
+  width: 168px;
+  height: 189px;
+  display: block;
+  position: absolute;
+  top: 86px;
+  left: -30px;
 }
 .targets__item_2 {
-  flex: 0 0 180px;
+  flex: 0 0 200px;
 }
 .targets__item_2::before {
   content: "";
@@ -550,7 +569,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 3px;
 }
 .targets__item_3 {
-  flex: 0 0 180px;
+  flex: 0 0 200px;
 }
 .targets__item_3::before {
   content: "";
@@ -562,7 +581,7 @@ h1, h2, h3, h4, h5, h6 {
   top: -2px;
 }
 .targets__item_4 {
-  flex: 0 0 180px;
+  flex: 0 0 200px;
 }
 .targets__item_4::before {
   content: "";
@@ -574,7 +593,7 @@ h1, h2, h3, h4, h5, h6 {
   top: -5px;
 }
 .targets__item_5 {
-  flex: 0 0 180px;
+  flex: 0 0 200px;
 }
 .targets__item_5::before {
   content: "";
@@ -584,6 +603,15 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   position: absolute;
   top: 1px;
+}
+.targets__message {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 310px;
+  position: absolute;
+  top: 32px;
+  left: 30px;
 }
 .targets__title {
   font-weight: 700;
