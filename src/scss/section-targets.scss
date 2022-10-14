@@ -130,6 +130,8 @@
         }
 
         &__item {
+            padding: 0 40px 0 0;
+
             &_1 {
                 position: absolute;
                 top: -50px;
@@ -174,9 +176,13 @@
 
 @media (max-width: 576px) {
     .targets {
+        &__body {
+            margin-left: 156px;
+        }
+
         &__item {
             &_1 {
-                margin-left: 27px;
+                margin-left: 70px;
 
                 &::before {
                     scale: .8;
@@ -184,7 +190,8 @@
 
                 &::after {
                     scale: .8;
-                    left: -46px;
+                    top: 63px;
+                    left: -5px;
                 }
             }
         }
@@ -192,6 +199,48 @@
         &__message {
             font-size: 14px;
             max-width: 270px;
+            padding-left: 35px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .targets {
+        &__body {
+            margin-left: 0;
+            padding-top: 220px;
+        }
+
+        &__item {
+            padding: 0;
+
+            &_1 {
+                margin-left: 227px;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .targets {
+        &__item {
+            &_1 {
+                margin-left: 212px;
+
+                &::before {
+                    scale: .75;
+                }
+
+                &::after {
+                    scale: .75;
+                    top: 55px;
+                    left: 5px;
+                }
+            }
+        }
+
+        &__message {
+            padding-left: 40px;
         }
     }
 }
