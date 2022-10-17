@@ -527,7 +527,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 107px 0 70px 0;
   /* ---------------------------------- video */
 }
-.targets__body {
+.targets__listing {
   display: flex;
   margin: 0 -10px 142px -10px;
 }
@@ -680,7 +680,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ---------------------------------- @media section targets */
 @media (max-width: 1300px) {
-  .targets__body {
+  .targets__listing {
     position: relative;
     padding-top: 100px;
     flex-wrap: wrap;
@@ -711,7 +711,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (max-width: 768px) {
-  .targets__body {
+  .targets__listing {
     flex-direction: column;
   }
   .targets__item_3 {
@@ -719,7 +719,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (max-width: 576px) {
-  .targets__body {
+  .targets__listing {
     margin-left: 156px;
   }
   .targets__item_1 {
@@ -740,7 +740,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (max-width: 425px) {
-  .targets__body {
+  .targets__listing {
     margin-left: 0;
     padding-top: 220px;
   }

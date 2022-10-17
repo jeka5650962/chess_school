@@ -5,7 +5,7 @@
     &__container {
     }
 
-    &__body {
+    &__listing {
         display: flex;
         margin: 0 -10px 142px -10px;
     }
@@ -188,7 +188,7 @@
 
 @media (max-width: 1300px) {
     .targets {
-        &__body {
+        &__listing {
             position: relative;
             padding-top: 100px;
             flex-wrap: wrap;
@@ -228,7 +228,7 @@
 
 @media (max-width: 768px) {
     .targets {
-        &__body {
+        &__listing {
             flex-direction: column;
         }
 
@@ -242,7 +242,7 @@
 
 @media (max-width: 576px) {
     .targets {
-        &__body {
+        &__listing {
             margin-left: 156px;
         }
 
@@ -272,7 +272,7 @@
 
 @media (max-width: 425px) {
     .targets {
-        &__body {
+        &__listing {
             margin-left: 0;
             padding-top: 220px;
         }
