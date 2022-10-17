@@ -637,7 +637,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   z-index: 2;
 }
-.targets .video__file {
+.targets .video__body video, .targets .video__body iframe {
   object-fit: cover;
   position: absolute;
   top: 0;
