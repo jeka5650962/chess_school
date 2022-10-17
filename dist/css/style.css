@@ -632,11 +632,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .targets .video__body {
   position: relative;
-  aspect-ratio: 16/9;
+  padding-bottom: 56%;
   border-radius: 20px;
   overflow: hidden;
+  z-index: 2;
 }
 .targets .video__file {
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;

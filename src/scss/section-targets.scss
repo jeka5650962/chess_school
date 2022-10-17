@@ -129,12 +129,14 @@
 
         &__body {
             position: relative;
-            aspect-ratio: 16 / 9;
+            padding-bottom: 56%;
             border-radius: 20px;
             overflow: hidden;
+            z-index: 2;
         }
 
         &__file {
+            object-fit: cover;
             position: absolute;
             top: 0;
             left: 0;
