@@ -525,6 +525,7 @@ h1, h2, h3, h4, h5, h6 {
 .targets {
   background: #f6f7f9;
   padding: 107px 0 70px 0;
+  /* ---------------------------------- video */
 }
 .targets__body {
   display: flex;
@@ -621,6 +622,54 @@ h1, h2, h3, h4, h5, h6 {
 }
 .targets__desc {
   line-height: 17px;
+}
+.targets__video {
+  margin: 0 auto;
+  position: relative;
+}
+.targets .video {
+  position: relative;
+  aspect-ratio: 16/9;
+  max-width: 780px;
+}
+.targets .video__file {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.targets .video__item--1 {
+  width: 281px;
+  height: 132px;
+  background: url("../img/section-targets/svg/curve-left.svg") 0 0 no-repeat;
+  position: absolute;
+  bottom: 23px;
+  left: -266px;
+}
+.targets .video__item--2 {
+  width: 165px;
+  height: 137px;
+  background: url("../img/section-targets/svg/triangle.svg") 0 0 no-repeat;
+  position: absolute;
+  top: -68px;
+  left: -96px;
+}
+.targets .video__item--3 {
+  width: 352px;
+  height: 351px;
+  background: url("../img/section-targets/svg/curve-right.svg") 0 0 no-repeat;
+  position: absolute;
+  top: -58px;
+  right: -245px;
+}
+.targets .video__item--4 {
+  width: 230px;
+  height: 230px;
+  background: url("../img/section-targets/svg/cross.svg") 0 0 no-repeat;
+  position: absolute;
+  bottom: -81px;
+  right: -144px;
 }
 
 /* ---------------------------------- @media section targets */
