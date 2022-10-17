@@ -125,12 +125,15 @@
     }
 
     .video {
-        position: relative;
-        aspect-ratio: 16 / 9;
         max-width: 780px;
-        //height: auto;
-        //border-radius: 20px;
-        //overflow: hidden;
+
+        &__body {
+            position: relative;
+            aspect-ratio: 16 / 9;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
         &__file {
             position: absolute;
             top: 0;

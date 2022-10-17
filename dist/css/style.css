@@ -628,9 +628,13 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 .targets .video {
+  max-width: 780px;
+}
+.targets .video__body {
   position: relative;
   aspect-ratio: 16/9;
-  max-width: 780px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .targets .video__file {
   position: absolute;
