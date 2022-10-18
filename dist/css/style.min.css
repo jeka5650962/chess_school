@@ -200,12 +200,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 767px) {
   .contacts__link--phone {
-    font-size: calc(16px + 0 * ((100vw - 320px) / 1180));
+    font-size: calc(16px + 0 * ((100vw - 320px) / 1920));
   }
 }
 @media (min-width: 767px) {
   .contacts__link--phone {
-    font-size: calc(16px + 0 * (100vw / 1180));
+    font-size: calc(16px + 0 * (100vw / 1920));
   }
 }
 
@@ -310,12 +310,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 1230px) and (max-width: 767px) {
   .contacts__link--phone {
-    font-size: calc(18px + 0 * ((100vw - 320px) / 1180));
+    font-size: calc(18px + 0 * ((100vw - 320px) / 1920));
   }
 }
 @media (max-width: 1230px) and (min-width: 767px) {
   .contacts__link--phone {
-    font-size: calc(18px + 0 * (100vw / 1180));
+    font-size: calc(18px + 0 * (100vw / 1920));
   }
 }
 .banner {
@@ -358,12 +358,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 767px) {
   .banner__title {
-    font-size: calc(42px + 0 * ((100vw - 320px) / 1180));
+    font-size: calc(42px + 0 * ((100vw - 320px) / 1920));
   }
 }
 @media (min-width: 767px) {
   .banner__title {
-    font-size: calc(42px + 0 * (100vw / 1180));
+    font-size: calc(42px + 0 * (100vw / 1920));
   }
 }
 .banner__desc {
@@ -373,12 +373,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 767px) {
   .banner__desc {
-    font-size: calc(24px + 0 * ((100vw - 320px) / 1180));
+    font-size: calc(24px + 0 * ((100vw - 320px) / 1920));
   }
 }
 @media (min-width: 767px) {
   .banner__desc {
-    font-size: calc(24px + 0 * (100vw / 1180));
+    font-size: calc(24px + 0 * (100vw / 1920));
   }
 }
 .banner__conditions {
@@ -414,12 +414,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 767px) {
   .banner__cost {
-    font-size: calc(28px + 0 * ((100vw - 320px) / 1180));
+    font-size: calc(28px + 0 * ((100vw - 320px) / 1920));
   }
 }
 @media (min-width: 767px) {
   .banner__cost {
-    font-size: calc(28px + 0 * (100vw / 1180));
+    font-size: calc(28px + 0 * (100vw / 1920));
   }
 }
 .banner__cost span::before {
@@ -437,12 +437,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 767px) {
   .banner__bonus {
-    font-size: calc(28px + 0 * ((100vw - 320px) / 1180));
+    font-size: calc(28px + 0 * ((100vw - 320px) / 1920));
   }
 }
 @media (min-width: 767px) {
   .banner__bonus {
-    font-size: calc(28px + 0 * (100vw / 1180));
+    font-size: calc(28px + 0 * (100vw / 1920));
   }
 }
 .banner__recom {
@@ -451,12 +451,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 767px) {
   .banner__recom {
-    font-size: calc(16px + 0 * ((100vw - 320px) / 1180));
+    font-size: calc(16px + 0 * ((100vw - 320px) / 1920));
   }
 }
 @media (min-width: 767px) {
   .banner__recom {
-    font-size: calc(16px + 0 * (100vw / 1180));
+    font-size: calc(16px + 0 * (100vw / 1920));
   }
 }
 .banner__btn {
@@ -470,12 +470,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 767px) {
   .banner__btn {
-    font-size: calc(14px + 0 * ((100vw - 320px) / 1180));
+    font-size: calc(14px + 0 * ((100vw - 320px) / 1920));
   }
 }
 @media (min-width: 767px) {
   .banner__btn {
-    font-size: calc(14px + 0 * (100vw / 1180));
+    font-size: calc(14px + 0 * (100vw / 1920));
   }
 }
 .banner__btn:hover {
@@ -685,12 +685,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 767px) {
   .targets__message {
-    font-size: calc(16px + 0 * ((100vw - 320px) / 1180));
+    font-size: calc(16px + 0 * ((100vw - 320px) / 1920));
   }
 }
 @media (min-width: 767px) {
   .targets__message {
-    font-size: calc(16px + 0 * (100vw / 1180));
+    font-size: calc(16px + 0 * (100vw / 1920));
   }
 }
 .targets__title {
@@ -701,12 +701,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 767px) {
   .targets__title {
-    font-size: calc(24px + 0 * ((100vw - 320px) / 1180));
+    font-size: calc(24px + 0 * ((100vw - 320px) / 1920));
   }
 }
 @media (min-width: 767px) {
   .targets__title {
-    font-size: calc(24px + 0 * (100vw / 1180));
+    font-size: calc(24px + 0 * (100vw / 1920));
   }
 }
 .targets__desc {
@@ -776,12 +776,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 767px) {
   .targets .title-section {
-    font-size: calc(24px + 20.4 * ((100vw - 320px) / 1180));
+    font-size: calc(24px + 20.4 * ((100vw - 320px) / 1920));
   }
 }
 @media (min-width: 767px) {
   .targets .title-section {
-    font-size: calc(24px + 12 * (100vw / 1180));
+    font-size: calc(24px + 12 * (100vw / 1920));
   }
 }
 .targets__main-desc {
@@ -792,12 +792,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 767px) {
   .targets .desc-section {
-    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1180));
+    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1920));
   }
 }
 @media (min-width: 767px) {
   .targets .desc-section {
-    font-size: calc(14px + 4 * (100vw / 1180));
+    font-size: calc(14px + 4 * (100vw / 1920));
   }
 }
 
@@ -863,12 +863,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 576px) and (max-width: 767px) {
   .targets__message {
-    font-size: calc(14px + 0 * ((100vw - 320px) / 1180));
+    font-size: calc(14px + 0 * ((100vw - 320px) / 1920));
   }
 }
 @media (max-width: 576px) and (min-width: 767px) {
   .targets__message {
-    font-size: calc(14px + 0 * (100vw / 1180));
+    font-size: calc(14px + 0 * (100vw / 1920));
   }
 }
 @media (max-width: 425px) {
