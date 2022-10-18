@@ -805,11 +805,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .targets .benefits {
   display: flex;
+  flex-wrap: wrap;
 }
 .targets .benefits__item {
   line-height: 142.86%;
   padding: 50px 10px 0 10px;
   position: relative;
+  flex: 0 1 16.666%;
 }
 .targets .benefits__item::before {
   position: absolute;
@@ -890,12 +892,29 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 30px;
   }
 }
+@media (max-width: 1138px) {
+  .targets .benefits__item {
+    flex: 0 1 33.333%;
+  }
+  .targets .benefits__item:nth-child(-n+3) {
+    margin-bottom: 30px;
+  }
+}
 @media (max-width: 768px) {
   .targets__listing {
     flex-direction: column;
   }
   .targets__item_3 {
     margin-top: 30px;
+  }
+  .targets .benefits__item {
+    flex: 0 1 50%;
+  }
+  .targets .benefits__item:nth-child(-n+3) {
+    margin-bottom: 0;
+  }
+  .targets .benefits__item:nth-child(-n+4) {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 576px) {
@@ -938,6 +957,18 @@ h1, h2, h3, h4, h5, h6 {
   }
   .targets__item_1 {
     margin-left: 227px;
+  }
+  .targets .benefits__item {
+    flex: 0 1 100%;
+  }
+  .targets .benefits__item:nth-child(-n+3) {
+    margin-bottom: 0;
+  }
+  .targets .benefits__item:nth-child(-n+4) {
+    margin-bottom: 0;
+  }
+  .targets .benefits__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 375px) {
