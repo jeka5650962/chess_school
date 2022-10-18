@@ -120,9 +120,8 @@
     }
 
     &__video {
-        margin: 0 auto;
+        margin: 0 auto 85px auto;
         position: relative;
-        padding-bottom: 68px;
     }
 
     .video {
@@ -151,7 +150,7 @@
                 height: 132px;
                 background: url("../img/section-targets/svg/curve-left.svg") 0 0 no-repeat;
                 position: absolute;
-                bottom: 91px;
+                bottom: 23px;
                 left: -266px;
             }
 
@@ -178,7 +177,7 @@
                 height: 230px;
                 background: url("../img/section-targets/svg/cross.svg") 0 0 no-repeat;
                 position: absolute;
-                bottom: -13px;
+                bottom: -81px;
                 right: -144px;
             }
         }
@@ -196,11 +195,91 @@
 
     &__main-desc {
         max-width: 979px;
+        margin-bottom: 30px;
     }
 
     .desc-section {
         @include adaptiv-font(18, 14);
         line-height: 144.44%;
+    }
+
+    &__benefits {
+        margin: 0 -10px;
+    }
+
+    .benefits {
+        display: flex;
+
+        &__item {
+            line-height: 142.86%;
+            padding: 50px 10px 0 10px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                top: 0;
+            }
+
+            &--1 {
+                &::before {
+                    content: '';
+                    background: url("../img/section-targets/svg/chess-item-1.svg");
+                    width: 33px;
+                    height: 40px;
+                    display: block;
+                }
+            }
+
+            &--2 {
+                &::before {
+                    content: '';
+                    background: url("../img/section-targets/svg/chess-item-2.svg");
+                    width: 43px;
+                    height: 37px;
+                    display: block;
+                }
+            }
+
+            &--3 {
+                &::before {
+                    content: '';
+                    background: url("../img/section-targets/svg/chess-item-3.svg");
+                    width: 40px;
+                    height: 32px;
+                    display: block;
+                }
+            }
+
+            &--4 {
+                &::before {
+                    content: '';
+                    background: url("../img/section-targets/svg/chess-item-4.svg");
+                    width: 38px;
+                    height: 40px;
+                    display: block;
+                }
+            }
+
+            &--5 {
+                &::before {
+                    content: '';
+                    background: url("../img/section-targets/svg/chess-item-5.svg");
+                    width: 40px;
+                    height: 40px;
+                    display: block;
+                }
+            }
+
+            &--6 {
+                &::before {
+                    content: '';
+                    background: url("../img/section-targets/svg/chess-item-6.svg");
+                    width: 49px;
+                    height: 36px;
+                    display: block;
+                }
+            }
+        }
     }
 }
 
