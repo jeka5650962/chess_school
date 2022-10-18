@@ -1,3 +1,15 @@
+$maxWidth: 1180;
+@mixin adaptiv-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $addMobSize: $addSize + $addSize * 0.7;
+    @media (max-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+    }
+    @media (min-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+    }
+}
+
 .banner {
     padding: 110px 0 0 0;
     background: #00093c;
@@ -38,21 +50,21 @@
 
     &__title {
         font-weight: 700;
-        font-size: 42px;
-        line-height: 51px;
+        @include adaptiv-font(42, 42);
+        line-height: 121.43%;
         margin: 0 0 11px 0;
     }
 
     &__desc {
         font-weight: 500;
-        font-size: 24px;
-        line-height: 29px;
+        @include adaptiv-font(24, 24);
+        line-height: 120.83%;
         margin: 0 0 28px 0;
     }
 
     &__conditions {
         font-weight: 500;
-        line-height: 17px;
+        line-height: 121.43%;
         display: flex;
         margin: 0 0 32px 0;
     }
@@ -83,8 +95,8 @@
 
     &__cost {
         font-weight: 700;
-        font-size: 28px;
-        line-height: 34px;
+        @include adaptiv-font(28, 28);
+        line-height: 121.43%;
         margin: 0 0 33px 0;
         display: flex;
 
@@ -100,21 +112,21 @@
 
     &__bonus {
         font-weight: 700;
-        font-size: 28px;
-        line-height: 34px;
+        @include adaptiv-font(28, 28);
+        line-height: 121.43%;
         margin: 0 0 12px 0;
     }
 
     &__recom {
-        font-size: 16px;
-        line-height: 20px;
+        @include adaptiv-font(16, 16);
+        line-height: 125%;
         margin: 0 0 24px 0;
     }
 
     &__btn {
         font-weight: 700;
-        font-size: 14px;
-        line-height: 26px;
+        @include adaptiv-font(14, 14);
+        line-height: 185.71%;
         padding: 12px 21px;
         background: #f7941d;
         border-radius: 6px;

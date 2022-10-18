@@ -196,8 +196,17 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 .contacts__link--phone {
-  font-size: 16px;
   color: #00093c;
+}
+@media (max-width: 767px) {
+  .contacts__link--phone {
+    font-size: calc(16px + 0 * ((100vw - 320px) / 1180));
+  }
+}
+@media (min-width: 767px) {
+  .contacts__link--phone {
+    font-size: calc(16px + 0 * (100vw / 1180));
+  }
 }
 
 /* ---------------------------------- @media header */
@@ -297,7 +306,16 @@ h1, h2, h3, h4, h5, h6 {
   }
   .contacts__link--phone {
     font-weight: 600;
-    font-size: 18px;
+  }
+}
+@media (max-width: 1230px) and (max-width: 767px) {
+  .contacts__link--phone {
+    font-size: calc(18px + 0 * ((100vw - 320px) / 1180));
+  }
+}
+@media (max-width: 1230px) and (min-width: 767px) {
+  .contacts__link--phone {
+    font-size: calc(18px + 0 * (100vw / 1180));
   }
 }
 .banner {
@@ -335,19 +353,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 .banner__title {
   font-weight: 700;
-  font-size: 42px;
-  line-height: 51px;
+  line-height: 121.43%;
   margin: 0 0 11px 0;
+}
+@media (max-width: 767px) {
+  .banner__title {
+    font-size: calc(42px + 0 * ((100vw - 320px) / 1180));
+  }
+}
+@media (min-width: 767px) {
+  .banner__title {
+    font-size: calc(42px + 0 * (100vw / 1180));
+  }
 }
 .banner__desc {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
+  line-height: 120.83%;
   margin: 0 0 28px 0;
+}
+@media (max-width: 767px) {
+  .banner__desc {
+    font-size: calc(24px + 0 * ((100vw - 320px) / 1180));
+  }
+}
+@media (min-width: 767px) {
+  .banner__desc {
+    font-size: calc(24px + 0 * (100vw / 1180));
+  }
 }
 .banner__conditions {
   font-weight: 500;
-  line-height: 17px;
+  line-height: 121.43%;
   display: flex;
   margin: 0 0 32px 0;
 }
@@ -372,10 +408,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 .banner__cost {
   font-weight: 700;
-  font-size: 28px;
-  line-height: 34px;
+  line-height: 121.43%;
   margin: 0 0 33px 0;
   display: flex;
+}
+@media (max-width: 767px) {
+  .banner__cost {
+    font-size: calc(28px + 0 * ((100vw - 320px) / 1180));
+  }
+}
+@media (min-width: 767px) {
+  .banner__cost {
+    font-size: calc(28px + 0 * (100vw / 1180));
+  }
 }
 .banner__cost span::before {
   content: "";
@@ -387,24 +432,51 @@ h1, h2, h3, h4, h5, h6 {
 }
 .banner__bonus {
   font-weight: 700;
-  font-size: 28px;
-  line-height: 34px;
+  line-height: 121.43%;
   margin: 0 0 12px 0;
 }
+@media (max-width: 767px) {
+  .banner__bonus {
+    font-size: calc(28px + 0 * ((100vw - 320px) / 1180));
+  }
+}
+@media (min-width: 767px) {
+  .banner__bonus {
+    font-size: calc(28px + 0 * (100vw / 1180));
+  }
+}
 .banner__recom {
-  font-size: 16px;
-  line-height: 20px;
+  line-height: 125%;
   margin: 0 0 24px 0;
+}
+@media (max-width: 767px) {
+  .banner__recom {
+    font-size: calc(16px + 0 * ((100vw - 320px) / 1180));
+  }
+}
+@media (min-width: 767px) {
+  .banner__recom {
+    font-size: calc(16px + 0 * (100vw / 1180));
+  }
 }
 .banner__btn {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 26px;
+  line-height: 185.71%;
   padding: 12px 21px;
   background: #f7941d;
   border-radius: 6px;
   color: #fff;
   transition: all 0.3s ease 0s;
+}
+@media (max-width: 767px) {
+  .banner__btn {
+    font-size: calc(14px + 0 * ((100vw - 320px) / 1180));
+  }
+}
+@media (min-width: 767px) {
+  .banner__btn {
+    font-size: calc(14px + 0 * (100vw / 1180));
+  }
 }
 .banner__btn:hover {
   background: #ffae4d;
@@ -525,7 +597,6 @@ h1, h2, h3, h4, h5, h6 {
 .targets {
   background: #f6f7f9;
   padding: 107px 0 70px 0;
-  /* ---------------------------------- video */
 }
 .targets__listing {
   display: flex;
@@ -606,26 +677,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 .targets__message {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  line-height: 125%;
   max-width: 310px;
   position: absolute;
   top: 32px;
   left: 30px;
 }
+@media (max-width: 767px) {
+  .targets__message {
+    font-size: calc(16px + 0 * ((100vw - 320px) / 1180));
+  }
+}
+@media (min-width: 767px) {
+  .targets__message {
+    font-size: calc(16px + 0 * (100vw / 1180));
+  }
+}
 .targets__title {
   font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
+  line-height: 120.83%;
   margin: 0 0 14px 0;
   padding: 60px 0 0 0;
 }
+@media (max-width: 767px) {
+  .targets__title {
+    font-size: calc(24px + 0 * ((100vw - 320px) / 1180));
+  }
+}
+@media (min-width: 767px) {
+  .targets__title {
+    font-size: calc(24px + 0 * (100vw / 1180));
+  }
+}
 .targets__desc {
-  line-height: 17px;
+  line-height: 121.43%;
 }
 .targets__video {
   margin: 0 auto;
   position: relative;
+  padding-bottom: 68px;
 }
 .targets .video {
   max-width: 780px;
@@ -650,7 +740,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 132px;
   background: url("../img/section-targets/svg/curve-left.svg") 0 0 no-repeat;
   position: absolute;
-  bottom: 23px;
+  bottom: 91px;
   left: -266px;
 }
 .targets .video__item--2 {
@@ -674,8 +764,41 @@ h1, h2, h3, h4, h5, h6 {
   height: 230px;
   background: url("../img/section-targets/svg/cross.svg") 0 0 no-repeat;
   position: absolute;
-  bottom: -81px;
+  bottom: -13px;
   right: -144px;
+}
+.targets__main-title {
+  margin-bottom: 25px;
+}
+.targets .title-section {
+  font-weight: 700;
+  line-height: 94.44%;
+}
+@media (max-width: 767px) {
+  .targets .title-section {
+    font-size: calc(24px + 20.4 * ((100vw - 320px) / 1180));
+  }
+}
+@media (min-width: 767px) {
+  .targets .title-section {
+    font-size: calc(24px + 12 * (100vw / 1180));
+  }
+}
+.targets__main-desc {
+  max-width: 979px;
+}
+.targets .desc-section {
+  line-height: 144.44%;
+}
+@media (max-width: 767px) {
+  .targets .desc-section {
+    font-size: calc(14px + 6.8 * ((100vw - 320px) / 1180));
+  }
+}
+@media (min-width: 767px) {
+  .targets .desc-section {
+    font-size: calc(14px + 4 * (100vw / 1180));
+  }
 }
 
 /* ---------------------------------- @media section targets */
@@ -734,9 +857,18 @@ h1, h2, h3, h4, h5, h6 {
     left: -5px;
   }
   .targets__message {
-    font-size: 14px;
     max-width: 270px;
     padding-left: 35px;
+  }
+}
+@media (max-width: 576px) and (max-width: 767px) {
+  .targets__message {
+    font-size: calc(14px + 0 * ((100vw - 320px) / 1180));
+  }
+}
+@media (max-width: 576px) and (min-width: 767px) {
+  .targets__message {
+    font-size: calc(14px + 0 * (100vw / 1180));
   }
 }
 @media (max-width: 425px) {
