@@ -1005,6 +1005,15 @@ h1, h2, h3, h4, h5, h6 {
 .features {
   background: #00093c;
   padding: 91px 0 50px 0;
+  position: relative;
+}
+.features__sqr {
+  background: url("../img/section-features/elem.svg") repeat-x;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .features__body {
   display: flex;
