@@ -1008,7 +1008,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .features__body {
   display: flex;
-  flex-wrap: wrap;
 }
 .features__item {
   line-height: 144.44%;
@@ -1033,12 +1032,9 @@ h1, h2, h3, h4, h5, h6 {
   flex: 0 1 50%;
   max-width: 481px;
 }
-.features__item:nth-child(3) {
-  flex: 0 1 100%;
+.features__action {
   display: flex;
   justify-content: center;
-}
-.features__button {
   margin-top: 41px;
 }
 
