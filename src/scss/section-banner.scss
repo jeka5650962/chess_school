@@ -113,7 +113,7 @@
         margin: 0 0 24px 0;
     }
 
-    &__btn {
+    /*.button {
         font-weight: 700;
         @include adaptiv-font(14, 14);
         line-height: 185.71%;
@@ -126,7 +126,7 @@
         &:hover {
             background: #ffae4d;
         }
-    }
+    }*/
 
     &__image {
         flex: 0 0 517px;
@@ -207,6 +207,21 @@
     }
 }
 
+.button {
+    font-weight: 700;
+    @include adaptiv-font(14, 14);
+    line-height: 185.71%;
+    padding: 12px 21px;
+    background: #f7941d;
+    border-radius: 6px;
+    color: #fff;
+    transition: all .3s ease 0s;
+
+    &:hover {
+        background: #ffae4d;
+    }
+}
+
 /* ---------------------------------- @media section banner */
 
 @media (max-width: 1230px) {
@@ -254,9 +269,7 @@
 }
 
 @media (max-width: 425px) {
-    .banner {
-        &__btn {
-            width: 100%;
-        }
+    .button {
+        width: 100%;
     }
 }

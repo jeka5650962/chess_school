@@ -1,0 +1,38 @@
+@import "mixin";
+
+.features {
+    background: #00093c;
+    padding: 91px 0 50px 0;
+
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        @include adaptiv-font(18, 18);
+        line-height: 144.44%;
+        color: #fff;
+
+        &:nth-child(1) {
+            flex: 0 1 50%;
+            max-width: 486px;
+            margin-right: 114px;
+        }
+
+        &:nth-child(2) {
+            flex: 0 1 50%;
+            max-width: 481px;
+        }
+
+        &:nth-child(3) {
+            flex: 0 1 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__button {
+        margin-top: 41px;
+    }
+}
