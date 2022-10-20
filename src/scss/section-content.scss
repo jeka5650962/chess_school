@@ -23,6 +23,16 @@
             width: 600px;
             height: 300px;
         }
+        .image-slider {
+            &__wrapper {}
+            &__slide {}
+            &__image {
+                text-align: center;
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
     }
 
     /* --------------------- slider swiper ↑ --------------------- */
