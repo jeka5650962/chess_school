@@ -23,26 +23,6 @@
             width: 600px;
             height: 300px;
         }
-
-        // Главный контейнер слайдера
-        .image-slider {
-            padding: 30px 0 70px 0;
-            // Обязательная оболочка
-            &__wrapper {
-            }
-
-            // Слайды
-            &__slide {
-            }
-
-            &__image {
-                text-align: center;
-
-                img {
-                    max-width: 100%;
-                }
-            }
-        }
     }
 
     /* --------------------- slider swiper ↑ --------------------- */
