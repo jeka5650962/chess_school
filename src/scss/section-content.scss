@@ -1,0 +1,24 @@
+@import "mixin";
+
+.content {
+    background: #f6f7f9;
+
+    &__body {
+        padding: 84px 0 72px 0;
+    }
+
+    &__title-section {
+        margin-bottom: 25px;
+    }
+
+    &__desc-section {
+        max-width: 979px;
+        margin-bottom: 25px;
+    }
+
+    &__row {}
+
+    &__info {}
+
+    &__image {}
+}

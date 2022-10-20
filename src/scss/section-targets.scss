@@ -4,9 +4,6 @@
     background: #f6f7f9;
     padding: 107px 0 70px 0;
 
-    &__container {
-    }
-
     &__listing {
         display: flex;
         margin: 0 -10px 142px -10px;
@@ -187,20 +184,9 @@
         margin-bottom: 25px;
     }
 
-    .title-section {
-        font-weight: 700;
-        @include adaptiv-font(36, 24);
-        line-height: 94.44%;
-    }
-
     &__main-desc {
         max-width: 979px;
         margin-bottom: 30px;
-    }
-
-    .desc-section {
-        @include adaptiv-font(18, 14);
-        line-height: 144.44%;
     }
 
     &__benefits {
@@ -283,6 +269,17 @@
             }
         }
     }
+}
+
+.title-section {
+    font-weight: 700;
+    @include adaptiv-font(36, 24);
+    line-height: 94.44%;
+}
+
+.desc-section {
+    @include adaptiv-font(18, 14);
+    line-height: 144.44%;
 }
 
 /* ---------------------------------- @media section targets */
