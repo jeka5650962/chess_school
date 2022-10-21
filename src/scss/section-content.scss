@@ -19,9 +19,11 @@
 
     &__slider {
         padding: 27px 0;
+
         .slider {
             &__wrapper {
                 display: flex;
+                justify-content: center;
                 margin: 0 -10px;
             }
 
