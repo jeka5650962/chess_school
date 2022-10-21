@@ -1062,16 +1062,6 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 979px;
   margin-bottom: 25px;
 }
-.content__slider .swiper {
-  width: 600px;
-  height: 300px;
-}
-.content__slider .image-slider__image {
-  text-align: center;
-}
-.content__slider .image-slider__image img {
-  max-width: 100%;
-}
 html, body {
   height: 100%;
 }
