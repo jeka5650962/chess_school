@@ -1088,6 +1088,42 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 34px;
   display: flex;
 }
+.content__info {
+  margin-right: 30px;
+  flex: 0 1 58%;
+}
+.content .image-content {
+  position: relative;
+  top: 30px;
+}
+.content .image-content span {
+  font-weight: 500;
+  line-height: 120.83%;
+  flex: 0 1 42%;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 767px) {
+  .content .image-content span {
+    font-size: calc(24px + 0 * ((100vw - 320px) / 1920));
+  }
+}
+@media (min-width: 767px) {
+  .content .image-content span {
+    font-size: calc(24px + 0 * (100vw / 1920));
+  }
+}
+.content .image-content__message {
+  position: absolute;
+  top: -38px;
+  left: -33px;
+}
+.content .image-content__owl {
+  position: absolute;
+  top: 25px;
+  right: -250px;
+}
+
 html, body {
   height: 100%;
 }
