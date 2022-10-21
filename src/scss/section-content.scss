@@ -13,17 +13,34 @@
 
     &__desc-section {
         max-width: 979px;
-        margin-bottom: 25px;
     }
 
     /* --------------------- slider swiper ↓ --------------------- */
 
     &__slider {
+        padding: 27px 0;
         .slider {
-            &__wrapper {}
-            &__slide {}
+            &__wrapper {
+                display: flex;
+                margin: 0 -10px;
+            }
+
+            &__slide {
+                padding: 0 10px;
+                flex: 1 0 auto;
+            }
+
             &__image {
-                img {}
+                height: 210px;
+                overflow: hidden;
+                border-radius: 20px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
             }
         }
     }
@@ -31,6 +48,8 @@
     /* --------------------- slider swiper ↑ --------------------- */
 
     &__row {
+        margin-top: 34px;
+        display: flex;
     }
 
     &__info {
