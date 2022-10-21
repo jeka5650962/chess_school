@@ -55,36 +55,36 @@
     }
 
     &__info {
-        margin-right: 30px;
         flex: 0 1 58%;
     }
 
     &__image {
+        flex: 0 1 42%;
     }
 
     .image-content {
         position: relative;
-        top: 30px;
 
         span {
             font-weight: 500;
             @include adaptiv-font(24, 24);
             line-height: 120.83%;
-            flex: 0 1 42%;
-            position: relative;
+            position: absolute;
+            top: 40px;
+            left: 30px;
             z-index: 2;
         }
 
         &__message {
             position: absolute;
-            top: -38px;
-            left: -33px;
+            top: 0;
+            left: 0;
         }
 
         &__owl {
             position: absolute;
-            top: 25px;
-            right: -250px;
+            bottom: -80px;
+            right: -60px;
         }
     }
 }

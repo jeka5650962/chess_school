@@ -1089,18 +1089,20 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 .content__info {
-  margin-right: 30px;
   flex: 0 1 58%;
+}
+.content__image {
+  flex: 0 1 42%;
 }
 .content .image-content {
   position: relative;
-  top: 30px;
 }
 .content .image-content span {
   font-weight: 500;
   line-height: 120.83%;
-  flex: 0 1 42%;
-  position: relative;
+  position: absolute;
+  top: 40px;
+  left: 30px;
   z-index: 2;
 }
 @media (max-width: 767px) {
@@ -1115,13 +1117,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .content .image-content__message {
   position: absolute;
-  top: -38px;
-  left: -33px;
+  top: 0;
+  left: 0;
 }
 .content .image-content__owl {
   position: absolute;
-  top: 25px;
-  right: -250px;
+  bottom: -80px;
+  right: -60px;
 }
 
 html, body {
