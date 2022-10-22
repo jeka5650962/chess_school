@@ -12,13 +12,46 @@
     }
 
     &__desc-section {
-        max-width: 979px;
+        display: flex;
+    }
+
+    &__desc-info {
+        flex: 0 1 79%;
+    }
+
+    &__desc-image {
+        flex: 0 1 21%;
+        position: relative;
+
+        &_1 {
+            position: absolute;
+            top: 70px;
+            left: 85px;
+        }
+
+        &_2 {
+            position: absolute;
+            top: -86px;
+            left: 0;
+        }
+
+        &_3 {
+            position: absolute;
+            top: -80px;
+            left: 155px;
+        }
+
+        &_4 {
+            position: absolute;
+            top: 58px;
+            right: -30px;
+        }
     }
 
     /* --------------------- slider swiper ↓ --------------------- */
 
     &__slider {
-        padding: 27px 0;
+        padding: 27px 0 140px 0;
 
         .slider {
             &__wrapper {
@@ -67,7 +100,7 @@
 
         span {
             font-weight: 500;
-            @include adaptiv-font(24, 24);
+            @include adaptiv-font(24, 14);
             line-height: 120.83%;
             position: absolute;
             top: 40px;
@@ -86,5 +119,31 @@
             bottom: -80px;
             right: -60px;
         }
+
+        /*&__chess {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            &_1 {
+                top: -150px;
+                right: 120px;
+            }
+
+            &_2 {
+                top: -300px;
+                right: 140px;
+            }
+
+            &_3 {
+                top: -300px;
+                right: 30px;
+            }
+
+            &_4 {
+                top: -160px;
+                right: -30px;
+            }
+        }*/
     }
 }
