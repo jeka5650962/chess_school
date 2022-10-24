@@ -89,7 +89,7 @@
 
     &__info {
         flex: 0 1 58%;
-        padding-right: 30px;
+        padding-right: 60px;
     }
 
     &__image {
@@ -105,20 +105,56 @@
             line-height: 120.83%;
             position: absolute;
             top: 40px;
-            left: 40px;
+            left: 15px;
             z-index: 2;
         }
 
         &__message {
             position: absolute;
             top: 0;
-            left: 0;
+            left: -30px;
         }
 
         &__owl {
             position: absolute;
-            bottom: -80px;
-            right: -60px;
+            bottom: -25px;
+            right: -36px;
+        }
+    }
+}
+
+@media (max-width: 1420px) {
+    .content {
+        &__info {
+        }
+
+        .image-content {
+            &__message {
+                //transform: scale(-1, 1);
+            }
+
+            &__owl {
+                //bottom: -130px;
+                //left: -130px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1220px) {
+    .content {
+        &__body {
+        }
+
+        &__row {
+        }
+
+        .image-content {
+            &__message {
+            }
+
+            &__owl {
+            }
         }
     }
 }
