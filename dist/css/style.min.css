@@ -1154,6 +1154,54 @@ h1, h2, h3, h4, h5, h6 {
   right: -36px;
 }
 
+@media (max-width: 1350px) {
+  .content__info {
+    flex: 0 1 45%;
+  }
+  .content .image-content {
+    flex: 0 1 55%;
+  }
+  .content .image-content span {
+    top: 43px;
+    left: 40px;
+  }
+  .content .image-content__message {
+    scale: 0.9;
+    right: 80px;
+  }
+  .content .image-content__owl {
+    scale: 0.9;
+    bottom: -55px;
+    left: 320px;
+  }
+}
+@media (max-width: 960px) {
+  .content__row {
+    flex-direction: column;
+  }
+  .content__info {
+    padding-right: 0;
+  }
+  .content .image-content span {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .content .image-content__message {
+    scale: 0.8;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .content .image-content__owl {
+    scale: 0.8;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
 .educator {
   background: #00093c;
   padding: 62px 0 92px 0;
