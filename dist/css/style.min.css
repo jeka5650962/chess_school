@@ -1116,90 +1116,70 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 .content__info {
-  flex: 0 1 58%;
-  padding-right: 60px;
+  flex: 0 1 50%;
+  padding-right: 30px;
 }
 .content__image {
-  flex: 0 1 42%;
+  flex: 0 1 50%;
 }
-.content .image-content {
+.content .image-content__body {
   position: relative;
 }
-.content .image-content span {
+.content .image-content__info {
   font-weight: 500;
   line-height: 120.83%;
   position: absolute;
-  top: 40px;
-  left: 15px;
-  z-index: 2;
+  top: 39px;
+  left: 44px;
+  z-index: 1;
 }
 @media (max-width: 767px) {
-  .content .image-content span {
+  .content .image-content__info {
     font-size: calc(14px + 17 * ((100vw - 320px) / 1920));
   }
 }
 @media (min-width: 767px) {
-  .content .image-content span {
+  .content .image-content__info {
     font-size: calc(14px + 10 * (100vw / 1920));
   }
 }
 .content .image-content__message {
   position: absolute;
   top: 0;
-  left: -30px;
+  left: 0;
 }
 .content .image-content__owl {
   position: absolute;
-  bottom: -25px;
-  right: -36px;
+  top: 30px;
+  right: 0;
 }
 
-@media (max-width: 1350px) {
-  .content__info {
-    flex: 0 1 45%;
-  }
-  .content .image-content {
-    flex: 0 1 55%;
-  }
-  .content .image-content span {
-    top: 43px;
-    left: 40px;
-  }
-  .content .image-content__message {
-    scale: 0.9;
-    right: 80px;
-  }
-  .content .image-content__owl {
-    scale: 0.9;
-    bottom: -55px;
-    left: 320px;
-  }
-}
-@media (max-width: 960px) {
+@media (max-width: 940px) {
   .content__row {
     flex-direction: column;
   }
-  .content__info {
-    padding-right: 0;
+  .content .image-content {
+    display: flex;
+    justify-content: flex-end;
   }
-  .content .image-content span {
-    position: relative;
+  .content .image-content__body {
+    height: 200px;
+    width: 100%;
+  }
+  .content .image-content__info {
     top: 0;
-    left: 0;
+    left: auto;
+    right: 260px;
   }
   .content .image-content__message {
-    scale: 0.8;
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    scale: 0.9;
+    top: -45px;
+    left: auto;
+    right: 180px;
   }
   .content .image-content__owl {
-    scale: 0.8;
-    position: relative;
     top: 0;
-    left: 0;
+    scale: 0.9;
   }
 }
 .educator {

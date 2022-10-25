@@ -1150,10 +1150,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 .content .image-content__owl {
   position: absolute;
-  top: 13px;
+  top: 30px;
   right: 0;
 }
 
+@media (max-width: 940px) {
+  .content__row {
+    flex-direction: column;
+  }
+  .content .image-content {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .content .image-content__body {
+    height: 200px;
+    width: 100%;
+  }
+  .content .image-content__info {
+    top: 0;
+    left: auto;
+    right: 260px;
+  }
+  .content .image-content__message {
+    scale: 0.9;
+    top: -45px;
+    left: auto;
+    right: 180px;
+  }
+  .content .image-content__owl {
+    top: 0;
+    scale: 0.9;
+  }
+}
 .educator {
   background: #00093c;
   padding: 62px 0 92px 0;
