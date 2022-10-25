@@ -125,6 +125,75 @@
     }
 }
 
+@media (max-width: 1440px) {
+    .content {
+        &__desc-section {
+        }
+
+        &__desc-info {
+            flex: 0 1 65%;
+            padding-right: 30px;
+        }
+
+        &__desc-image {
+            flex: 0 1 35%;
+
+            &_1 {
+            }
+
+            &_2 {
+            }
+
+            &_3 {
+                left: 200px;
+            }
+
+            &_4 {
+                right: 100px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .content {
+        &__desc-section {
+            flex-direction: column;
+        }
+
+        &__desc-info {
+            flex: 1 1 auto;
+            padding-right: 0;
+        }
+
+        &__desc-image {
+            flex: 1 1 auto;
+            height: 200px;
+
+            &_1 {
+                top: 20px;
+                left: 50px;
+            }
+
+            &_2 {
+                top: 60px;
+                left: 30%;
+            }
+
+            &_3 {
+                top: 30px;
+                left: auto;
+                right: 35%;
+            }
+
+            &_4 {
+                top: 70px;
+                right: 50px;
+            }
+        }
+    }
+}
+
 @media (max-width: 940px) {
     .content {
         &__row {
@@ -170,6 +239,24 @@
 @media (max-width: 768px) {
     .content {
 
+        &__desc-image {
+            &_1 {
+                scale: .9;
+            }
+
+            &_2 {
+                scale: .8;
+            }
+
+            &_3 {
+                scale: .9;
+            }
+
+            &_4 {
+                scale: .9;
+            }
+        }
+
         .image-content {
 
             &__info {
@@ -199,6 +286,27 @@
 
 @media (max-width: 475px) {
     .content {
+
+        &__desc-image {
+            &_1 {
+                left: 20px;
+                scale: .75;
+            }
+
+            &_2 {
+                left: 20%;
+                scale: .7;
+            }
+
+            &_3 {
+                scale: .75;
+            }
+
+            &_4 {
+                right: 20px;
+                scale: .75;
+            }
+        }
 
         .image-content {
 
