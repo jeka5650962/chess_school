@@ -1167,19 +1167,62 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
   }
   .content .image-content__info {
-    top: 0;
+    top: -6px;
     left: auto;
-    right: 260px;
+    right: 244px;
   }
   .content .image-content__message {
-    scale: 0.9;
     top: -45px;
     left: auto;
-    right: 180px;
+    right: 185px;
+  }
+  .content .image-content__message img {
+    width: 316px;
   }
   .content .image-content__owl {
     top: 0;
-    scale: 0.9;
+  }
+  .content .image-content__owl img {
+    width: 176px;
+  }
+}
+@media (max-width: 768px) {
+  .content .image-content__info {
+    top: 73px;
+    right: 213px;
+  }
+  .content .image-content__message {
+    top: 40px;
+    right: 160px;
+  }
+  .content .image-content__message img {
+    width: 281px;
+  }
+  .content .image-content__owl {
+    top: 85px;
+  }
+  .content .image-content__owl img {
+    width: 156px;
+  }
+}
+@media (max-width: 475px) {
+  .content .image-content__info {
+    top: 70px;
+    left: 36px;
+    width: 100%;
+  }
+  .content .image-content__message {
+    left: 0;
+  }
+  .content .image-content__message img {
+    width: 246px;
+  }
+  .content .image-content__owl {
+    top: 95px;
+    right: 0;
+  }
+  .content .image-content__owl img {
+    width: 137px;
   }
 }
 .educator {
