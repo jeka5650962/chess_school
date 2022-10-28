@@ -10,11 +10,62 @@
         line-height: 122.22%;
         color: #fff;
         margin-bottom: 43px;
+        text-align: center;
+    }
+
+    &__body {
+        position: relative;
+    }
+
+    &__elements {
+        position: absolute;
+
+        &_1 {
+            width: 263px;
+            height: 129px;
+            background: url("../img/section-educator/svg/curve-left.svg") 0 0 no-repeat;
+            bottom: -30px;
+            left: -370px;
+        }
+
+        &_2 {
+            width: 131px;
+            height: 131px;
+            background: url("../img/section-educator/svg/cross.svg") 0 0 no-repeat;
+            top: -99px;
+            left: -78px;
+        }
+
+        &_3 {
+            width: 99px;
+            height: 82px;
+            background: url("../img/section-educator/svg/triangle.svg") 0 0 no-repeat;
+            bottom: -47px;
+            right: 477px;
+        }
+
+        &_4 {
+            width: 341px;
+            height: 133px;
+            background: url("../img/section-educator/svg/curve-right.svg") 0 0 no-repeat;
+            top: -30px;
+            right: -316px;
+        }
+
+        &_5 {
+            width: 120px;
+            height: 120px;
+            background: url("../img/section-educator/svg/circle.svg") 0 0 no-repeat;
+            bottom: 27px;
+            right: -81px;
+        }
     }
 
     &__items {
         display: flex;
         margin: 0 -10px;
+        position: relative;
+        z-index: 1;
     }
 
     &__column {
