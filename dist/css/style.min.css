@@ -1324,6 +1324,7 @@ h1, h2, h3, h4, h5, h6 {
 .educator__column {
   flex: 0 1 25%;
   padding: 0 10px;
+  display: flex;
 }
 .educator .item-educator {
   background: #fff;
