@@ -1298,7 +1298,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .educator {
-  background: #00093c;
+  background: linear-gradient(90deg, #00093c 18px, transparent 1%) center, linear-gradient(#00093c 18px, transparent 1%) center, #27aae1;
+  background-size: 20px 20px;
   padding: 62px 0 92px 0;
 }
 .educator__title {
@@ -1307,6 +1308,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   margin-bottom: 43px;
   text-align: center;
+  background: #00093c;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 767px) {
   .educator__title {
