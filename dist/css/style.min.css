@@ -1427,6 +1427,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   line-height: 142.86%;
   color: #4f4f4f;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .educator .item-educator__desc {
@@ -1437,6 +1438,120 @@ h1, h2, h3, h4, h5, h6 {
   .educator .item-educator__desc {
     font-size: calc(14px + 0 * (100vw / 1920));
   }
+}
+
+@media (max-width: 1024px) {
+  .educator__items {
+    flex-wrap: wrap;
+  }
+  .educator__column {
+    flex: 0 1 50%;
+  }
+  .educator__column:nth-child(-n+2) {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 590px) {
+  .educator__column {
+    flex: 1 1 auto;
+  }
+  .educator__column:nth-child(-n+3) {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 432px) {
+  .educator__title {
+    position: relative;
+    z-index: 1;
+  }
+}
+.faq {
+  background: #f6f7f9;
+  padding: 66px 0 331px 0;
+}
+.faq__title {
+  font-weight: 700;
+  line-height: 121.43%;
+  margin-bottom: 31px;
+}
+@media (max-width: 767px) {
+  .faq__title {
+    font-size: calc(24px + 6.8 * ((100vw - 320px) / 1920));
+  }
+}
+@media (min-width: 767px) {
+  .faq__title {
+    font-size: calc(24px + 4 * (100vw / 1920));
+  }
+}
+.faq__body {
+  position: relative;
+}
+.faq__block {
+  position: relative;
+}
+.faq__block:not(:last-child) {
+  margin-bottom: 20px;
+}
+.faq__content {
+  padding: 20px 30px;
+  background: #fff;
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+}
+.faq__question {
+  font-weight: 500;
+  line-height: 188.89%;
+}
+@media (max-width: 767px) {
+  .faq__question {
+    font-size: calc(18px + 0 * ((100vw - 320px) / 1920));
+  }
+}
+@media (min-width: 767px) {
+  .faq__question {
+    font-size: calc(18px + 0 * (100vw / 1920));
+  }
+}
+.faq__answer {
+  line-height: 185.71%;
+  max-width: 979px;
+}
+.faq__gradient {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #f7941d 0%, #27aae1 100%);
+  opacity: 0.3;
+  filter: blur(5px);
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.faq__elements {
+  position: absolute;
+}
+.faq__elements_1 {
+  background: url("../img/section-faq/svg/circle.svg") 0 0 no-repeat;
+  width: 149px;
+  height: 149px;
+  top: 142px;
+  left: -103px;
+}
+.faq__elements_2 {
+  background: url("../img/section-faq/svg/triangle.svg") 0 0 no-repeat;
+  width: 138px;
+  height: 115px;
+  top: -65px;
+  right: -62px;
+}
+.faq__elements_3 {
+  background: url("../img/section-faq/svg/cross.svg") 0 0 no-repeat;
+  width: 180px;
+  height: 180px;
+  bottom: -62px;
+  right: -111px;
 }
 
 html, body {
