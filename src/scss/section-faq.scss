@@ -29,17 +29,42 @@
         border-radius: 6px;
         position: relative;
         z-index: 1;
+        cursor: pointer;
+
+        &.active {
+            .faq__answer {
+                height: auto;
+            }
+
+            .faq__question::before {
+                transform: rotate(45deg);
+                transition: all 0.3s ease 0s;
+            }
+        }
     }
 
     &__question {
         font-weight: 500;
         @include adaptiv-font(18, 18);
         line-height: 188.89%;
+        position: relative;
+
+        &::before {
+            content: '';
+            background: url("../img/section-faq/svg/plus.svg") 0 0 no-repeat;
+            width: 17px;
+            height: 17px;
+            position: absolute;
+            top: 10px;
+            right: 30px;
+        }
     }
 
     &__answer {
         line-height: 185.71%;
         max-width: 979px;
+        height: 0;
+        overflow: hidden;
     }
 
     &__gradient {
