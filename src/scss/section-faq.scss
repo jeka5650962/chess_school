@@ -26,11 +26,6 @@
         border-radius: 6px;
         position: relative;
         z-index: 1;
-
-        &.opened + .faq__gradient {
-            top: 10px;
-            left: 10px;
-        }
     }
 
     &__question {
@@ -41,10 +36,6 @@
         cursor: pointer;
         padding: 20px 30px;
 
-        &.active + .faq__answer {
-            display: block;
-        }
-
         &::before {
             content: '';
             width: 17px;
@@ -53,14 +44,30 @@
             position: absolute;
             top: 28.42px;
             right: 30px;
+            transition: .3s;
+        }
+
+        &.active + .faq__answer {
+            max-height: 300px;
+            padding-bottom: 20px;
+            transition: all .3s ease 0s;
+        }
+
+        &.active::before {
+            transform: rotate(45deg);
         }
     }
 
     &__answer {
         line-height: 185.71%;
         max-width: 1010px;
-        padding: 0 30px 20px 30px;
-        display: none;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 0;
+        height: auto;
+        max-height: 0;
+        overflow: hidden;
+        transition: all .3s ease 0s;
     }
 
     &__gradient {
@@ -98,7 +105,7 @@
             background: url("../img/section-faq/svg/cross.svg") 0 0 no-repeat;
             width: 180px;
             height: 180px;
-            bottom: -62px;
+            top: 240px;
             right: -111px;
         }
     }

@@ -14,11 +14,3 @@ for (let i = 0; i < faqBlock.length; i++) {
     })
 }
 
-const faqContent = document.getElementsByClassName('faq__content');
-
-for (let i = 0; i < faqContent.length; i++) {
-    faqContent[i].addEventListener('click', function () {
-        this.classList.toggle('opened')
-    })
-}
-
