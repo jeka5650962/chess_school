@@ -1503,16 +1503,16 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 188.89%;
   position: relative;
   cursor: pointer;
-  padding: 20px 30px;
+  padding: 20px 60px 20px 30px;
 }
 @media (max-width: 767px) {
   .faq__question {
-    font-size: calc(18px + 0 * ((100vw - 320px) / 1920));
+    font-size: calc(16px + 3.4 * ((100vw - 320px) / 1920));
   }
 }
 @media (min-width: 767px) {
   .faq__question {
-    font-size: calc(18px + 0 * (100vw / 1920));
+    font-size: calc(16px + 2 * (100vw / 1920));
   }
 }
 .faq__question::before {
@@ -1529,6 +1529,7 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 300px;
   padding-bottom: 20px;
   transition: all 0.3s ease 0s;
+  overflow-y: scroll;
 }
 .faq__question.active::before {
   transform: rotate(45deg);
