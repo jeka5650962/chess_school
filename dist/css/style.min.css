@@ -1605,12 +1605,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .form-section__left::before {
   content: "";
-  background: url("../img/section-form/owl.png") 0 0 no-repeat;
-  width: 277px;
-  height: 312px;
+  background: url("../img/svg/owl.svg") 0 0 no-repeat;
+  width: 100%;
+  height: 292px;
   position: absolute;
-  top: -15px;
-  left: -90px;
+  top: -8px;
+  left: -95px;
 }
 .form-section__right {
   flex: 1 1 auto;
