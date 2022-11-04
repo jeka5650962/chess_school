@@ -55,3 +55,26 @@
         }
     }
 }
+
+/* ------------------------- form ------------------------- */
+
+.form {
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        &:not(:first-child) {
+            flex: 0 1 50%;
+        }
+        &:first-child {
+            flex: 0 1 100%;
+        }
+    }
+    &__info {
+        flex: 0 1 50%;
+    }
+    &__button {
+        flex: 0 1 50%;
+    }
+}

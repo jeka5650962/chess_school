@@ -1657,6 +1657,24 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* ------------------------- form ------------------------- */
+.form__body {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form__item:not(:first-child) {
+  flex: 0 1 50%;
+}
+.form__item:first-child {
+  flex: 0 1 100%;
+}
+.form__info {
+  flex: 0 1 50%;
+}
+.form__button {
+  flex: 0 1 50%;
+}
+
 .footer {
   background: #00093c;
   height: 300px;
