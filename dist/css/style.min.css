@@ -1467,7 +1467,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .faq {
   background: #f6f7f9;
-  padding: 66px 0 101px 0;
+  padding: 66px 0 61px 0;
 }
 .faq__title {
   font-weight: 700;
@@ -1586,21 +1586,34 @@ h1, h2, h3, h4, h5, h6 {
 
 .form-section {
   background: #f6f7f9;
-  padding-bottom: 50px;
 }
 .form-section__wrapper {
   background: #fff;
   border-radius: 20px;
   padding: 40px;
+  position: relative;
+  bottom: -40px;
 }
 .form-section__body {
   display: flex;
 }
 .form-section__left {
-  flex: 0 1 55%;
+  flex: 0 0 611px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.form-section__left::before {
+  content: "";
+  background: url("../img/section-form/owl.png") 0 0 no-repeat;
+  width: 277px;
+  height: 312px;
+  position: absolute;
+  top: -15px;
+  left: -90px;
 }
 .form-section__right {
-  flex: 0 1 45%;
+  flex: 1 1 auto;
 }
 .form-section__image {
   background: url("../img/section-form/svg/message.svg") 0 0 no-repeat;

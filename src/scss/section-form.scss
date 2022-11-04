@@ -2,20 +2,34 @@
 
 .form-section {
     background: #f6f7f9;
-    padding-bottom: 50px;
+    //padding-bottom: 50px;
     &__wrapper {
         background: #fff;
         border-radius: 20px;
         padding: 40px;
+        position: relative;
+        bottom: -40px;
     }
     &__body {
         display: flex;
     }
     &__left {
-        flex: 0 1 55%;
+        flex: 0 0 611px;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        &::before {
+            content: '';
+            background: url("../img/section-form/owl.png") 0 0 no-repeat;
+            width: 277px;
+            height: 312px;
+            position: absolute;
+            top: -15px;
+            left: -90px;
+        }
     }
     &__right {
-        flex: 0 1 45%;
+        flex: 1 1 auto;
     }
     &__image {
         background: url("../img/section-form/svg/message.svg") 0 0 no-repeat;
@@ -27,7 +41,6 @@
     }
     &__image-text {}
     .image-text {
-        //max-width: 353px;
         padding: 0 15px 0 50px;
         &__title {
             font-weight: 600;
