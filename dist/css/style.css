@@ -1467,7 +1467,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .faq {
   background: #f6f7f9;
-  padding: 66px 0 331px 0;
+  padding: 66px 0 101px 0;
 }
 .faq__title {
   font-weight: 700;
@@ -1488,9 +1488,11 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 .faq__item {
-  margin-bottom: 20px;
   position: relative;
   z-index: 1;
+}
+.faq__item:not(:nth-child(4)) {
+  margin-bottom: 20px;
 }
 .faq__content {
   background: #fff;
@@ -1529,7 +1531,6 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 300px;
   padding-bottom: 20px;
   transition: all 0.3s ease 0s;
-  overflow-y: scroll;
 }
 .faq__question.active::before {
   transform: rotate(45deg);
@@ -1546,12 +1547,6 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease 0s;
 }
 .faq__gradient {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, #f7941d 0%, #27aae1 100%);
-  opacity: 0.3;
-  filter: blur(5px);
-  border-radius: 6px;
   position: absolute;
   top: 0;
   left: 0;
@@ -1579,6 +1574,78 @@ h1, h2, h3, h4, h5, h6 {
   height: 180px;
   top: 240px;
   right: -111px;
+}
+.faq .gradient {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #f7941d 0%, #27aae1 100%);
+  opacity: 0.3;
+  filter: blur(5px);
+  border-radius: 6px;
+}
+
+.form-section {
+  background: #f6f7f9;
+  padding-bottom: 50px;
+}
+.form-section__wrapper {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+}
+.form-section__body {
+  display: flex;
+}
+.form-section__left {
+  flex: 0 1 55%;
+}
+.form-section__right {
+  flex: 0 1 45%;
+}
+.form-section__image {
+  background: url("../img/section-form/svg/message.svg") 0 0 no-repeat;
+  width: 420px;
+  height: 192px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-section .image-text {
+  padding: 0 15px 0 50px;
+}
+.form-section .image-text__title {
+  font-weight: 600;
+  line-height: 120.83%;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .form-section .image-text__title {
+    font-size: calc(24px + 0 * ((100vw - 320px) / 1920));
+  }
+}
+@media (min-width: 767px) {
+  .form-section .image-text__title {
+    font-size: calc(24px + 0 * (100vw / 1920));
+  }
+}
+.form-section .image-text__subtitle {
+  font-weight: 500;
+  line-height: 162.5%;
+}
+@media (max-width: 767px) {
+  .form-section .image-text__subtitle {
+    font-size: calc(16px + 0 * ((100vw - 320px) / 1920));
+  }
+}
+@media (min-width: 767px) {
+  .form-section .image-text__subtitle {
+    font-size: calc(16px + 0 * (100vw / 1920));
+  }
+}
+
+.footer {
+  background: #00093c;
+  height: 300px;
 }
 
 html, body {

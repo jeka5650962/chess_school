@@ -1,0 +1,44 @@
+@import "mixin";
+
+.form-section {
+    background: #f6f7f9;
+    padding-bottom: 50px;
+    &__wrapper {
+        background: #fff;
+        border-radius: 20px;
+        padding: 40px;
+    }
+    &__body {
+        display: flex;
+    }
+    &__left {
+        flex: 0 1 55%;
+    }
+    &__right {
+        flex: 0 1 45%;
+    }
+    &__image {
+        background: url("../img/section-form/svg/message.svg") 0 0 no-repeat;
+        width: 420px;
+        height: 192px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__image-text {}
+    .image-text {
+        //max-width: 353px;
+        padding: 0 15px 0 50px;
+        &__title {
+            font-weight: 600;
+            @include adaptiv-font(24, 24);
+            line-height: 120.83%;
+            margin-bottom: 20px;
+        }
+        &__subtitle {
+            font-weight: 500;
+            @include adaptiv-font(16, 16);
+            line-height: 162.50%;
+        }
+    }
+}
