@@ -147,12 +147,22 @@
     }
 
     &__button {
-        font-weight: 700;
+        font-weight: 600;
         color: #fff;
         background: #f7941d;
+        border: 1px solid #f7941d;
         border-radius: 10px;
         padding: 12px 15px;
         width: 100%;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all .3s ease 0s;
+
+        &:hover {
+            background: #fff;
+            color: #f7941d;
+            scale: 1.05;
+        }
     }
 
     .form__input:focus ~ .form__label,
@@ -160,5 +170,67 @@
         top: -18px;
         left: 20px;
         font-size: 11px;
+    }
+}
+
+@media (max-width: 1296px) {
+    .form-section {
+        &__left {
+            flex: 0 1 60%;
+            justify-content: flex-start;
+            padding-left: 150px;
+
+            &::before {
+                width: 40%;
+                height: 200px;
+                left: -10px;
+            }
+        }
+
+        &__right {
+            flex: 0 0 440px;
+            padding-left: 0;
+        }
+
+        &__image {
+            scale: 0.8;
+        }
+    }
+}
+
+@media (max-width: 1124px) {
+    .form-section {
+        &__body {
+            flex-direction: column;
+        }
+
+        &__left {
+            flex: 1 1 auto;
+            margin-bottom: 40px;
+        }
+
+        &__right {
+            flex: 1 1 auto;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .form-section {
+        &__left {
+            margin-bottom: 20px;
+
+            &::before {
+                top: 0;
+                left: 0;
+                width: 25%;
+                height: 160px;
+            }
+        }
+
+        &__right {
+        }
     }
 }

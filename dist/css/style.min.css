@@ -1734,12 +1734,21 @@ h1, h2, h3, h4, h5, h6 {
   flex: 0 1 50%;
 }
 .form__button {
-  font-weight: 700;
+  font-weight: 600;
   color: #fff;
   background: #f7941d;
+  border: 1px solid #f7941d;
   border-radius: 10px;
   padding: 12px 15px;
   width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease 0s;
+}
+.form__button:hover {
+  background: #fff;
+  color: #f7941d;
+  scale: 1.05;
 }
 .form .form__input:focus ~ .form__label,
 .form .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
@@ -1748,6 +1757,50 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 11px;
 }
 
+@media (max-width: 1296px) {
+  .form-section__left {
+    flex: 0 1 60%;
+    justify-content: flex-start;
+    padding-left: 150px;
+  }
+  .form-section__left::before {
+    width: 40%;
+    height: 200px;
+    left: -10px;
+  }
+  .form-section__right {
+    flex: 0 0 440px;
+    padding-left: 0;
+  }
+  .form-section__image {
+    scale: 0.8;
+  }
+}
+@media (max-width: 1124px) {
+  .form-section__body {
+    flex-direction: column;
+  }
+  .form-section__left {
+    flex: 1 1 auto;
+    margin-bottom: 40px;
+  }
+  .form-section__right {
+    flex: 1 1 auto;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 720px) {
+  .form-section__left {
+    margin-bottom: 20px;
+  }
+  .form-section__left::before {
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 160px;
+  }
+}
 .footer {
   background: #00093c;
   height: 300px;
