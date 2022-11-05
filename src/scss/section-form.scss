@@ -107,6 +107,12 @@
         display: block;
         padding: 16px 19px;
         width: 100%;
+        transition: all .5s ease 0s;
+
+        &:focus {
+            box-shadow: 0 0 10px #27aae1;
+            background: #fff;
+        }
     }
 
     &__info {
