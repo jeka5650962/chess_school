@@ -1501,11 +1501,11 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 .faq__question {
+  padding: 20px 60px 20px 30px;
   font-weight: 500;
-  line-height: 188.89%;
+  line-height: 140%;
   position: relative;
   cursor: pointer;
-  padding: 20px 60px 20px 30px;
 }
 @media (max-width: 767px) {
   .faq__question {
@@ -1523,24 +1523,20 @@ h1, h2, h3, h4, h5, h6 {
   height: 17px;
   background: url("../img/section-faq/svg/plus.svg") 0 0 no-repeat;
   position: absolute;
-  top: 28.42px;
   right: 30px;
   transition: 0.3s;
 }
 .faq__question.active + .faq__answer {
   max-height: 300px;
-  padding-bottom: 20px;
   transition: all 0.3s ease 0s;
 }
 .faq__question.active::before {
   transform: rotate(45deg);
 }
 .faq__answer {
+  padding: 0 30px;
   line-height: 185.71%;
   max-width: 1010px;
-  padding-right: 30px;
-  padding-left: 30px;
-  padding-bottom: 0;
   height: auto;
   max-height: 0;
   overflow: hidden;
@@ -1584,6 +1580,11 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 6px;
 }
 
+@media (max-width: 480px) {
+  .faq__answer {
+    overflow-y: scroll;
+  }
+}
 .form-section {
   background: #f6f7f9;
 }
