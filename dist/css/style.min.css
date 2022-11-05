@@ -1686,6 +1686,14 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   padding: 16px 19px;
   width: 100%;
+  transition: all 0.5s ease 0s;
+}
+.form__input:focus {
+  box-shadow: 0 0 10px #27aae1;
+  background: #fff;
+}
+.form__input._error {
+  box-shadow: 0 0 10px #e12727;
 }
 .form__info {
   flex: 0 1 50%;

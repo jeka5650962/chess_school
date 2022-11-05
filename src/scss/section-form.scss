@@ -113,6 +113,10 @@
             box-shadow: 0 0 10px #27aae1;
             background: #fff;
         }
+
+        &._error {
+            box-shadow: 0 0 10px #e12727;
+        }
     }
 
     &__info {
