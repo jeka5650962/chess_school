@@ -1683,7 +1683,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .form__label {
   position: absolute;
-  top: 16px;
+  top: 17px;
   left: 29px;
   -webkit-transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
   transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
@@ -1742,13 +1742,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .form .form__input:focus ~ .form__label,
 .form .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
-  top: -1.2rem;
-  font-size: 0.8rem;
-  left: 1rem;
-}
-.form .form__input:focus ~ .form__label.form__label,
-.form .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label.form__label {
-  padding: 0 5px;
+  top: -18px;
+  left: 20px;
+  font-size: 11px;
 }
 
 .footer {
