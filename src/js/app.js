@@ -37,8 +37,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 let result = await response.json()
                 alert(result.message)
                 form.reset()
+                form.classList.remove('_sending')
             } else {
                 alert('Ошибка')
+                form.classList.remove('_sending')
             }
         } else {
             alert('Заполните обязательные поля')
