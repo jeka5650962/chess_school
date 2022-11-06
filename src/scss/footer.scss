@@ -37,4 +37,58 @@
             color: rgba(255, 255, 255, 0.5);
         }
     }
+
+    .first-column {
+        padding-top: 69px;
+
+        &__logo {
+            margin-bottom: 47px;
+        }
+
+        &__phone {
+            color: #fff;
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 22px;
+            display: inline-block;
+
+            &:hover {
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+
+        &__address {
+            font-weight: 500;
+            line-height: 120%;
+            margin-bottom: 22px;
+        }
+
+        &__email {
+            color: #fff;
+            font-weight: 500;
+            line-height: 185.71%;
+            margin-bottom: 41px;
+            display: inline-block;
+
+            &:hover {
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+
+        &__social {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 33px;
+        }
+
+        &__social-item {
+        }
+
+        &__copyright {
+            font-size: 12px;
+            line-height: 125%;
+            color: #bdbdbd;
+        }
+    }
 }

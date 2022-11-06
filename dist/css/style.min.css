@@ -1907,6 +1907,48 @@ h1, h2, h3, h4, h5, h6 {
 .footer__link:hover {
   color: rgba(255, 255, 255, 0.5);
 }
+.footer .first-column {
+  padding-top: 69px;
+}
+.footer .first-column__logo {
+  margin-bottom: 47px;
+}
+.footer .first-column__phone {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 22px;
+  display: inline-block;
+}
+.footer .first-column__phone:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer .first-column__address {
+  font-weight: 500;
+  line-height: 120%;
+  margin-bottom: 22px;
+}
+.footer .first-column__email {
+  color: #fff;
+  font-weight: 500;
+  line-height: 185.71%;
+  margin-bottom: 41px;
+  display: inline-block;
+}
+.footer .first-column__email:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer .first-column__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 33px;
+}
+.footer .first-column__copyright {
+  font-size: 12px;
+  line-height: 125%;
+  color: #bdbdbd;
+}
 
 html, body {
   width: 100%;
