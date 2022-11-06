@@ -2,5 +2,39 @@
 
 .footer {
     background: #00093c;
-    height: 300px;
+    padding: 70px 0 56px 0;
+
+    &__wrapper {
+        display: flex;
+        margin: 0 -30px;
+    }
+
+    &__column {
+        flex: 0 1 20%;
+        padding: 0 30px;
+        color: #fff;
+    }
+
+    &__label {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 162.50%;
+        margin-bottom: 16px;
+    }
+
+    &__list {
+        line-height: 130%;
+    }
+
+    &__item {
+        margin-bottom: 16px;
+    }
+
+    &__link {
+        color: #fff;
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
 }

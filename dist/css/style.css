@@ -1878,7 +1878,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer {
   background: #00093c;
-  height: 300px;
+  padding: 70px 0 56px 0;
+}
+.footer__wrapper {
+  display: flex;
+  margin: 0 -30px;
+}
+.footer__column {
+  flex: 0 1 20%;
+  padding: 0 30px;
+  color: #fff;
+}
+.footer__label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 162.5%;
+  margin-bottom: 16px;
+}
+.footer__list {
+  line-height: 130%;
+}
+.footer__item {
+  margin-bottom: 16px;
+}
+.footer__link {
+  color: #fff;
+}
+.footer__link:hover {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 html, body {
