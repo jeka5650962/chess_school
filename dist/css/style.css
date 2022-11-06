@@ -1885,9 +1885,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 -30px;
 }
 .footer__column {
-  flex: 0 1 20%;
+  flex: 0 1 19%;
   padding: 0 30px;
   color: #fff;
+}
+.footer__column.first-column {
+  flex: 0 1 24%;
 }
 .footer__label {
   font-weight: 700;
@@ -1911,7 +1914,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 69px;
 }
 .footer .first-column__logo {
-  display: inline-block;
+  display: block;
   margin-bottom: 47px;
 }
 .footer .first-column__phone {
