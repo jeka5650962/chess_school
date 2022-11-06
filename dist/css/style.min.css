@@ -1568,7 +1568,7 @@ h1, h2, h3, h4, h5, h6 {
   background: url("../img/section-faq/svg/cross.svg") 0 0 no-repeat;
   width: 180px;
   height: 180px;
-  top: 240px;
+  top: 200px;
   right: -111px;
 }
 .faq .gradient {
@@ -1790,15 +1790,90 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 680px) {
   .form-section__left {
-    margin-bottom: 20px;
+    flex: 0 1 auto;
+    margin-bottom: 0;
+    display: block;
+    height: 220px;
+    padding-left: 0;
   }
   .form-section__left::before {
+    width: 100%;
+  }
+  .form-section__right {
+    flex: 0 1 auto;
+  }
+  .form-section__image {
+    position: absolute;
     top: 0;
-    left: 0;
-    width: 25%;
-    height: 160px;
+    left: 140px;
+  }
+}
+@media (max-width: 630px) {
+  .form-section__left {
+    height: 180px;
+  }
+  .form-section__left::before {
+    height: 150px;
+  }
+  .form-section__image {
+    scale: 0.7;
+    top: -30px;
+    left: 80px;
+  }
+}
+@media (max-width: 548px) {
+  .form-section__left {
+    height: 140px;
+  }
+  .form-section__left::before {
+    height: 120px;
+  }
+  .form-section__image {
+    scale: 0.6;
+    top: -40px;
+    left: 30px;
+  }
+  .form__item:not(:first-child) {
+    flex: 0 1 100%;
+  }
+  .form__item:nth-child(-n+3) {
+    margin-bottom: 25px;
+  }
+  .form__info {
+    flex: 0 1 100%;
+    margin-bottom: 25px;
+  }
+  .form__button-wrapper {
+    flex: 0 1 100%;
+  }
+}
+@media (max-width: 478px) {
+  .form-section__left {
+    height: auto;
+    margin-bottom: 35px;
+  }
+  .form-section__left::before {
+    display: none;
+  }
+  .form-section__image {
+    scale: 1;
+    background: none;
+    position: static;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .form-section__image .image-text {
+    padding: 0;
+    text-align: center;
+  }
+  .form-section__image .image-text__title {
+    font-size: 20px;
+  }
+  .form-section__image .image-text__subtitle {
+    font-size: 14px;
   }
 }
 .footer {
