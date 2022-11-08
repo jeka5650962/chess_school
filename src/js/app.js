@@ -181,7 +181,7 @@ function bodyUnLock() {
 }
 
 document.addEventListener('keydown', function (e) {
-    if (e.which === 27) {
+    if (e.key === 'Escape') {
         const popupActive = document.querySelector('.popup.open')
         popupClose(popupActive)
     }
