@@ -19,7 +19,7 @@
 
             &::before {
                 content: '';
-                background: url("../img/section-targets/svg/message.svg");
+                background: url("../img/section-targets/svg/message.svg") 0 0 no-repeat;
                 width: 352px;
                 height: 140px;
                 display: block;
@@ -27,7 +27,7 @@
 
             &::after {
                 content: '';
-                background: url("../img/section-targets/owl.png");
+                background: url("../img/section-targets/owl.png") 0 0 no-repeat;
                 width: 168px;
                 height: 189px;
                 display: block;
@@ -42,7 +42,7 @@
 
             &::before {
                 content: '';
-                background: url("../img/section-targets/svg/target-1.svg");
+                background: url("../img/section-targets/svg/target-1.svg") 0 0 no-repeat;
                 width: 26px;
                 height: 41px;
                 display: block;
@@ -56,7 +56,7 @@
 
             &::before {
                 content: '';
-                background: url("../img/section-targets/svg/target-2.svg");
+                background: url("../img/section-targets/svg/target-2.svg") 0 0 no-repeat;
                 width: 21px;
                 height: 46px;
                 display: block;
@@ -70,7 +70,7 @@
 
             &::before {
                 content: '';
-                background: url("../img/section-targets/svg/target-3.svg");
+                background: url("../img/section-targets/svg/target-3.svg") 0 0 no-repeat;
                 width: 23px;
                 height: 49px;
                 display: block;
@@ -84,7 +84,7 @@
 
             &::before {
                 content: '';
-                background: url("../img/section-targets/svg/target-4.svg");
+                background: url("../img/section-targets/svg/target-4.svg") 0 0 no-repeat;
                 width: 27px;
                 height: 43px;
                 display: block;
@@ -211,7 +211,7 @@
             &--1 {
                 &::before {
                     content: '';
-                    background: url("../img/section-targets/svg/chess-item-1.svg");
+                    background: url("../img/section-targets/svg/chess-item-1.svg") 0 0 no-repeat;
                     width: 33px;
                     height: 40px;
                     display: block;
@@ -221,7 +221,7 @@
             &--2 {
                 &::before {
                     content: '';
-                    background: url("../img/section-targets/svg/chess-item-2.svg");
+                    background: url("../img/section-targets/svg/chess-item-2.svg") 0 0 no-repeat;
                     width: 43px;
                     height: 37px;
                     display: block;
@@ -231,7 +231,7 @@
             &--3 {
                 &::before {
                     content: '';
-                    background: url("../img/section-targets/svg/chess-item-3.svg");
+                    background: url("../img/section-targets/svg/chess-item-3.svg") 0 0 no-repeat;
                     width: 40px;
                     height: 32px;
                     display: block;
@@ -241,7 +241,7 @@
             &--4 {
                 &::before {
                     content: '';
-                    background: url("../img/section-targets/svg/chess-item-4.svg");
+                    background: url("../img/section-targets/svg/chess-item-4.svg") 0 0 no-repeat;
                     width: 38px;
                     height: 40px;
                     display: block;
@@ -251,7 +251,7 @@
             &--5 {
                 &::before {
                     content: '';
-                    background: url("../img/section-targets/svg/chess-item-5.svg");
+                    background: url("../img/section-targets/svg/chess-item-5.svg") 0 0 no-repeat;
                     width: 40px;
                     height: 40px;
                     display: block;
@@ -261,7 +261,7 @@
             &--6 {
                 &::before {
                     content: '';
-                    background: url("../img/section-targets/svg/chess-item-6.svg");
+                    background: url("../img/section-targets/svg/chess-item-6.svg") 0 0 no-repeat;
                     width: 49px;
                     height: 36px;
                     display: block;
@@ -290,7 +290,7 @@
             position: relative;
             padding-top: 100px;
             flex-wrap: wrap;
-            margin-left: 240px;
+            margin: 0 0 100px 240px;
         }
 
         &__item {
@@ -342,6 +342,7 @@
     .targets {
         &__listing {
             flex-direction: column;
+            margin: 0 0 80px 240px;
         }
 
         &__item {
@@ -400,7 +401,7 @@
     .targets {
         &__listing {
             margin-left: 0;
-            padding-top: 220px;
+            padding-top: 200px;
         }
 
         &__item {
@@ -408,6 +409,20 @@
 
             &_1 {
                 margin-left: 227px;
+            }
+
+            &:not(:first-child) {
+                &::before {
+                    left: 47%;
+                }
+
+                .targets__title {
+                    text-align: center;
+                }
+
+                .targets__desc {
+                    text-align: center;
+                }
             }
         }
 
@@ -439,6 +454,7 @@
 
                 &::before {
                     scale: .75;
+                    width: 388px;
                 }
 
                 &::after {

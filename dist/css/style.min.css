@@ -610,14 +610,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 .targets__item_1::before {
   content: "";
-  background: url("../img/section-targets/svg/message.svg");
+  background: url("../img/section-targets/svg/message.svg") 0 0 no-repeat;
   width: 352px;
   height: 140px;
   display: block;
 }
 .targets__item_1::after {
   content: "";
-  background: url("../img/section-targets/owl.png");
+  background: url("../img/section-targets/owl.png") 0 0 no-repeat;
   width: 168px;
   height: 189px;
   display: block;
@@ -630,7 +630,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .targets__item_2::before {
   content: "";
-  background: url("../img/section-targets/svg/target-1.svg");
+  background: url("../img/section-targets/svg/target-1.svg") 0 0 no-repeat;
   width: 26px;
   height: 41px;
   display: block;
@@ -642,7 +642,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .targets__item_3::before {
   content: "";
-  background: url("../img/section-targets/svg/target-2.svg");
+  background: url("../img/section-targets/svg/target-2.svg") 0 0 no-repeat;
   width: 21px;
   height: 46px;
   display: block;
@@ -654,7 +654,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .targets__item_4::before {
   content: "";
-  background: url("../img/section-targets/svg/target-3.svg");
+  background: url("../img/section-targets/svg/target-3.svg") 0 0 no-repeat;
   width: 23px;
   height: 49px;
   display: block;
@@ -666,7 +666,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .targets__item_5::before {
   content: "";
-  background: url("../img/section-targets/svg/target-4.svg");
+  background: url("../img/section-targets/svg/target-4.svg") 0 0 no-repeat;
   width: 27px;
   height: 43px;
   display: block;
@@ -790,42 +790,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 .targets .benefits__item--1::before {
   content: "";
-  background: url("../img/section-targets/svg/chess-item-1.svg");
+  background: url("../img/section-targets/svg/chess-item-1.svg") 0 0 no-repeat;
   width: 33px;
   height: 40px;
   display: block;
 }
 .targets .benefits__item--2::before {
   content: "";
-  background: url("../img/section-targets/svg/chess-item-2.svg");
+  background: url("../img/section-targets/svg/chess-item-2.svg") 0 0 no-repeat;
   width: 43px;
   height: 37px;
   display: block;
 }
 .targets .benefits__item--3::before {
   content: "";
-  background: url("../img/section-targets/svg/chess-item-3.svg");
+  background: url("../img/section-targets/svg/chess-item-3.svg") 0 0 no-repeat;
   width: 40px;
   height: 32px;
   display: block;
 }
 .targets .benefits__item--4::before {
   content: "";
-  background: url("../img/section-targets/svg/chess-item-4.svg");
+  background: url("../img/section-targets/svg/chess-item-4.svg") 0 0 no-repeat;
   width: 38px;
   height: 40px;
   display: block;
 }
 .targets .benefits__item--5::before {
   content: "";
-  background: url("../img/section-targets/svg/chess-item-5.svg");
+  background: url("../img/section-targets/svg/chess-item-5.svg") 0 0 no-repeat;
   width: 40px;
   height: 40px;
   display: block;
 }
 .targets .benefits__item--6::before {
   content: "";
-  background: url("../img/section-targets/svg/chess-item-6.svg");
+  background: url("../img/section-targets/svg/chess-item-6.svg") 0 0 no-repeat;
   width: 49px;
   height: 36px;
   display: block;
@@ -866,7 +866,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     padding-top: 100px;
     flex-wrap: wrap;
-    margin-left: 240px;
+    margin: 0 0 100px 240px;
   }
   .targets__item {
     padding: 0 40px 0 0;
@@ -903,6 +903,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   .targets__listing {
     flex-direction: column;
+    margin: 0 0 80px 240px;
   }
   .targets__item_3 {
     margin-top: 30px;
@@ -950,13 +951,22 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 425px) {
   .targets__listing {
     margin-left: 0;
-    padding-top: 220px;
+    padding-top: 200px;
   }
   .targets__item {
     padding: 0;
   }
   .targets__item_1 {
     margin-left: 227px;
+  }
+  .targets__item:not(:first-child)::before {
+    left: 47%;
+  }
+  .targets__item:not(:first-child) .targets__title {
+    text-align: center;
+  }
+  .targets__item:not(:first-child) .targets__desc {
+    text-align: center;
   }
   .targets .benefits__item {
     flex: 0 1 100%;
@@ -977,6 +987,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .targets__item_1::before {
     scale: 0.75;
+    width: 388px;
   }
   .targets__item_1::after {
     scale: 0.75;
