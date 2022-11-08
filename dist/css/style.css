@@ -1455,9 +1455,13 @@ h1, h2, h3, h4, h5, h6 {
   }
   .educator__column {
     flex: 0 1 50%;
+    justify-content: center;
   }
   .educator__column:nth-child(-n+2) {
     margin-bottom: 20px;
+  }
+  .educator .item-educator {
+    flex: 0 1 320px;
   }
 }
 @media (max-width: 590px) {

@@ -151,10 +151,15 @@ $dot-space: 20px;
 
         &__column {
             flex: 0 1 50%;
+            justify-content: center;
 
             &:nth-child(-n+2) {
                 margin-bottom: 20px;
             }
+        }
+
+        .item-educator {
+            flex: 0 1 320px;
         }
     }
 }
