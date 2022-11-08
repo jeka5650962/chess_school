@@ -552,6 +552,12 @@ h1, h2, h3, h4, h5, h6 {
   .banner {
     padding: 60px 0 0 0;
   }
+  .banner__container::before, .banner__container::after {
+    display: none;
+  }
+  .banner__item--4, .banner__item--5, .banner__item--6, .banner__item--7 {
+    display: none;
+  }
 }
 @media (max-width: 1050px) {
   .banner {
