@@ -8,10 +8,20 @@
     background: rgba(0, 9, 60, 0.7);
     opacity: 0;
     visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
 
     &:target {
         opacity: 1;
         visibility: visible;
+    }
+
+    &__area {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
     }
 
     &__body {
