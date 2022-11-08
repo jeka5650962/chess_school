@@ -1905,11 +1905,11 @@ h1, h2, h3, h4, h5, h6 {
   overflow-x: hidden;
   transition: all 0.5s ease 0s;
 }
-.popup:target {
+.popup.open {
   opacity: 1;
   visibility: visible;
 }
-.popup:target .popup__content {
+.popup.open .popup__content {
   opacity: 1;
   transform: perspective(600px) translate(0, 0) rotateX(0);
 }

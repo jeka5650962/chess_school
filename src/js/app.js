@@ -4,7 +4,7 @@ import * as myBurger from "./modules/burger.js";
 myFunctions.isWebp();
 myBurger.onBurger();
 
-// ---------------------------- faqBlock и faqContent
+// ---------------------------- faqBlock и faqContent ----------------------------
 
 const faqQuestion = document.getElementsByClassName('faq__question');
 
@@ -14,7 +14,7 @@ for (let i = 0; i < faqQuestion.length; i++) {
     })
 }
 
-// ---------------------------- форма
+// ---------------------------- форма ----------------------------
 
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('form')
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 })
 
-// ---------------------------- popup
+// ---------------------------- popup ----------------------------
 
 const popupLinks = document.querySelectorAll('.popup-link')
 const body = document.querySelector('body')
@@ -93,15 +93,15 @@ const lockPadding = document.querySelectorAll('.lock-padding')
 
 let unlock = true
 
-const timeout = 800
+const timeout = 500
 
 if (popupLinks.length > 0) {
     for (let index = 0; index < popupLinks.length; index++) {
         const popupLink = popupLinks[index]
         popupLink.addEventListener('click', function (e) {
             const popupName = popupLink.getAttribute('href').replace('#', '')
-            const curentPopup = document.getElementById(popupName)
-            popupOpen(curentPopup)
+            const currentPopup = document.getElementById(popupName)
+            popupOpen(currentPopup)
             e.preventDefault()
         })
     }
@@ -118,16 +118,16 @@ if (popupCloseIcon.length > 0) {
     }
 }
 
-function popupOpen(curentPopup) {
-    if (curentPopup && unlock) {
+function popupOpen(currentPopup) {
+    if (currentPopup && unlock) {
         const popupActive = document.querySelector('.popup.open')
         if (popupActive) {
             popupClose(popupActive, false)
         } else {
             bodyLock()
         }
-        curentPopup.classList.add('open')
-        curentPopup.addEventListener('click', function (e) {
+        currentPopup.classList.add('open')
+        currentPopup.addEventListener('click', function (e) {
             if (!e.target.closest('.popup__content')) {
                 popupClose(e.target.closest('.popup'))
             }
@@ -145,7 +145,7 @@ function popupClose(popupActive, doUnlock = true) {
 }
 
 function bodyUnLock() {
-    const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper') /* ............... */
+    const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px'
 
     for (let index = 0; index < lockPadding.length; index++) {
         const el = lockPadding[index]
