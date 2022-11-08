@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
   top: -1px;
 }
 .menu__item:nth-child(1) .menu__link {
-  padding: 0 0 0 28px;
+  margin: 0 0 0 28px;
 }
 .menu__link {
   font-weight: 500;
@@ -179,10 +179,10 @@ h1, h2, h3, h4, h5, h6 {
   top: -2px;
 }
 .contacts__item:nth-child(1) .contacts__link {
-  padding: 0 10px 0 26px;
+  margin: 0 10px 0 26px;
 }
 .contacts__item:nth-child(3) .contacts__link {
-  padding: 0 0 0 26px;
+  margin: 0 0 0 26px;
 }
 .contacts__link {
   font-weight: 500;
