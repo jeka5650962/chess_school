@@ -1902,7 +1902,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   visibility: hidden;
 }
-.popup.open {
+.popup:target {
   opacity: 1;
   visibility: visible;
 }
