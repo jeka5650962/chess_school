@@ -1949,6 +1949,10 @@ h1, h2, h3, h4, h5, h6 {
   top: 20px;
   right: 20px;
   rotate: 45deg;
+  transition: scale 0.3s ease 0s;
+}
+.popup__close:hover {
+  scale: 1.3;
 }
 .popup__title {
   font-weight: 700;
@@ -2165,6 +2169,9 @@ body {
   font-size: 14px;
   font-weight: 400;
   color: #000;
+}
+body.lock {
+  overflow: hidden;
 }
 
 .wrapper {
