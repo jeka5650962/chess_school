@@ -196,16 +196,18 @@
 
 .button {
     font-weight: 700;
-    @include adaptiv-font(14, 14);
-    line-height: 185.71%;
-    padding: 12px 21px;
+    font-size: 14px;
+    padding: 15px 21px;
     background: #f7941d;
+    border: 1px solid #f7941d;
     border-radius: 6px;
     color: #fff;
     transition: all .3s ease 0s;
 
     &:hover {
-        background: #ffae4d;
+        background: #fff;
+        color: #f7941d;
+        scale: 1.05;
     }
 }
 

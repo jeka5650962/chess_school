@@ -526,25 +526,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .button {
   font-weight: 700;
-  line-height: 185.71%;
-  padding: 12px 21px;
+  font-size: 14px;
+  padding: 15px 21px;
   background: #f7941d;
+  border: 1px solid #f7941d;
   border-radius: 6px;
   color: #fff;
   transition: all 0.3s ease 0s;
 }
-@media (max-width: 767px) {
-  .button {
-    font-size: calc(14px + 0 * ((100vw - 320px) / 1920));
-  }
-}
-@media (min-width: 767px) {
-  .button {
-    font-size: calc(14px + 0 * (100vw / 1920));
-  }
-}
 .button:hover {
-  background: #ffae4d;
+  background: #fff;
+  color: #f7941d;
+  scale: 1.05;
 }
 
 /* ---------------------------------- @media section banner */
