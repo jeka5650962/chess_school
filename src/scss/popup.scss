@@ -9,6 +9,11 @@
     opacity: 0;
     visibility: hidden;
 
+    &.open {
+        opacity: 1;
+        visibility: visible;
+    }
+
     &__body {
         min-height: 100%;
         display: flex;

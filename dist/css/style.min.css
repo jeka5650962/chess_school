@@ -525,6 +525,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .button {
+  display: inline-block;
+  cursor: pointer;
   font-weight: 700;
   font-size: 14px;
   padding: 15px 21px;
@@ -1899,6 +1901,10 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(0, 9, 60, 0.7);
   opacity: 0;
   visibility: hidden;
+}
+.popup.open {
+  opacity: 1;
+  visibility: visible;
 }
 .popup__body {
   min-height: 100%;
