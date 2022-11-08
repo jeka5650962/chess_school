@@ -1927,6 +1927,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 .popup__content {
+  margin: 0 15px;
   background: #fff;
   border-radius: 20px;
   max-width: 800px;
