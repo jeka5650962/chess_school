@@ -1903,10 +1903,15 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
   overflow-y: auto;
   overflow-x: hidden;
+  transition: all 0.5s ease 0s;
 }
 .popup:target {
   opacity: 1;
   visibility: visible;
+}
+.popup:target .popup__content {
+  opacity: 1;
+  transform: perspective(600px) translate(0, 0) rotateX(0);
 }
 .popup__area {
   position: absolute;
@@ -1927,6 +1932,9 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 800px;
   padding: 40px 30px;
   position: relative;
+  transition: all 0.5s ease 0s;
+  opacity: 0;
+  transform: perspective(600px) translate(0, -100%) rotateX(45deg);
 }
 .popup__content .popup__title, .popup__content .popup__text {
   text-align: center;

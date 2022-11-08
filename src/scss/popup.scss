@@ -10,10 +10,16 @@
     visibility: hidden;
     overflow-y: auto;
     overflow-x: hidden;
+    transition: all .5s ease 0s;
 
     &:target {
         opacity: 1;
         visibility: visible;
+
+        .popup__content {
+            opacity: 1;
+            transform: perspective(600px) translate(0, 0) rotateX(0);
+        }
     }
 
     &__area {
@@ -37,6 +43,9 @@
         max-width: 800px;
         padding: 40px 30px;
         position: relative;
+        transition: all .5s ease 0s;
+        opacity: 0;
+        transform: perspective(600px) translate(0, -100%) rotateX(45deg);
 
         .popup__title, .popup__text {
             text-align: center;
