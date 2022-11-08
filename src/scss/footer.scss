@@ -76,6 +76,14 @@
             margin-bottom: 33px;
         }
 
+        &__social-item {
+            transition: scale 300ms ease;
+
+            &:hover {
+                scale: 1.2;
+            }
+        }
+
         &__copyright {
             font-size: 12px;
             line-height: 125%;
@@ -95,6 +103,8 @@
         background-size: 100% 2px;
     }
 }
+
+// ---------------------------- @media ----------------------------
 
 @media (max-width: 1180px) {
     .footer {

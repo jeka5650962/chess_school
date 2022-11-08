@@ -1941,6 +1941,12 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   margin-bottom: 33px;
 }
+.footer .first-column__social-item {
+  transition: scale 300ms ease;
+}
+.footer .first-column__social-item:hover {
+  scale: 1.2;
+}
 .footer .first-column__copyright {
   font-size: 12px;
   line-height: 125%;
