@@ -78,10 +78,7 @@
     &__link {
         font-weight: 500;
         color: #000;
-
-        &:hover {
-            text-decoration: underline;
-        }
+        line-height: 121.43%;
     }
 }
 
@@ -143,14 +140,6 @@
     &__link {
         font-weight: 500;
         color: #000;
-
-        &--location {
-            text-decoration: underline;
-        }
-
-        &--location:hover {
-            text-decoration: none;
-        }
 
         &--phone {
             @include adaptiv-font(16, 16);

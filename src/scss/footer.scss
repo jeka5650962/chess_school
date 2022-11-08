@@ -36,10 +36,6 @@
 
     &__link {
         color: #fff;
-
-        &:hover {
-            color: rgba(255, 255, 255, 0.5);
-        }
     }
 
     .first-column {
@@ -54,12 +50,9 @@
             color: #fff;
             font-weight: 600;
             font-size: 18px;
+            line-height: 144.44%;
             margin-bottom: 22px;
             display: inline-block;
-
-            &:hover {
-                color: rgba(255, 255, 255, 0.5);
-            }
         }
 
         &__address {
@@ -74,10 +67,6 @@
             line-height: 185.71%;
             margin-bottom: 41px;
             display: inline-block;
-
-            &:hover {
-                color: rgba(255, 255, 255, 0.5);
-            }
         }
 
         &__social {
@@ -92,6 +81,18 @@
             line-height: 125%;
             color: #bdbdbd;
         }
+    }
+}
+
+.gradient-link {
+    background-image: linear-gradient(90deg, #f7941d 0%, #27aae1 100%);
+    background-size: 0 2px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms ease;
+
+    &:hover {
+        background-size: 100% 2px;
     }
 }
 
