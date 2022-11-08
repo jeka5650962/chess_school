@@ -418,6 +418,40 @@
     </main>
     @@include('html/footer.html',{})
 </div>
+<div id="popup" class="popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="" class="popup__close"></a>
+            <div class="popup__title">Оставить заявку</div>
+            <div class="popup__text">Через некоторое время с вами свяжется менеджер</div>
+            <div class="popup__form form">
+                <form action="#" id="form" class="form__body">
+                    <div class="form__item">
+                        <input id="formName" type="text" name="name" class="form__input _req"
+                               placeholder=" " autocomplete="off" required>
+                        <label for="formName" class="form__label">Ваше имя <span>*</span></label>
+                    </div>
+                    <div class="form__item">
+                        <input id="formPhone" type="text" name="phone" class="form__input _req"
+                               placeholder=" " autocomplete="off" required>
+                        <label for="formPhone" class="form__label">Ваш телефон <span>*</span></label>
+                    </div>
+                    <div class="form__item">
+                        <input id="formEmail" type="text" name="email" class="form__input _req _email"
+                               placeholder=" " autocomplete="off" required>
+                        <label for="formEmail" class="form__label">Ваш email <span>*</span></label>
+                    </div>
+                    <div class="form__info">Нажимая на кнопку, я соглашаюсь на обработку персональных
+                        данных и с правилами пользования Платформой
+                    </div>
+                    <div class="form__button-wrapper">
+                        <button class="form__button" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="js/app.min.js"></script>
 </body>
 </html>

@@ -1889,6 +1889,55 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 14px;
   }
 }
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 9, 60, 0.7);
+  opacity: 0;
+  visibility: hidden;
+}
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup__content {
+  background: #fff;
+  border-radius: 20px;
+  max-width: 800px;
+  padding: 40px 30px;
+  position: relative;
+}
+.popup__content .popup__title, .popup__content .popup__text {
+  text-align: center;
+}
+.popup__close {
+  background: url("../img/section-faq/svg/plus.svg") 0 0 no-repeat;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  rotate: 45deg;
+}
+.popup__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+}
+.popup__text {
+  line-height: 140%;
+}
+.popup__form {
+  margin-top: 30px;
+}
+
 .footer {
   background: #00093c;
   padding: 70px 0 56px 0;
