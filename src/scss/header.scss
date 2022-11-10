@@ -49,10 +49,24 @@
 }
 
 .menu {
+    &__body {
+        & a {
+            color: #000;
+        }
+    }
+
     &__list {
         display: flex;
         position: relative;
         z-index: 2;
+
+        & > li:hover .submenu__list {
+            display: block;
+        }
+
+        li {
+            position: relative;
+        }
     }
 
     &__item {
@@ -67,20 +81,110 @@
             width: 20px;
             height: 16px;
             position: absolute;
-            top: -1px;
+            top: 0;
         }
 
         &:nth-child(1) .menu__link {
             margin: 0 0 0 28px;
         }
+
+        // ------------ submenu ------------
+        .submenu {
+            &__list {
+                display: none;
+                padding: 20px 0 0 0;
+                position: absolute;
+                top: 10px;
+                left: 0;
+                min-width: 200px;
+
+                & > li {
+                    background: #f6f7f9;
+
+                    &:first-child {
+                        border-radius: 10px 10px 0 0;
+                    }
+
+                    &:last-child {
+                        border-radius: 0 0 10px 10px;
+                    }
+
+                    &:hover .sub-submenu__list {
+                        display: block;
+                    }
+                }
+            }
+
+            &__item {
+                &:not(:last-child) {
+                    border-bottom: 1px solid #fff;
+                }
+
+                &:hover {
+                    background: #e8e8e8;
+
+                    & .submenu__link {
+                        font-weight: 500;
+                    }
+                }
+
+                // ------------ sub-submenu ------------
+                .sub-submenu {
+                    &__list {
+                        display: none;
+                        position: absolute;
+                        top: 0;
+                        left: 100%;
+                        min-width: 300px;
+                        padding: 0 0 0 5px;
+
+                        & > li {
+                            background: #f6f7f9;
+
+                            &:first-child {
+                                border-radius: 10px 10px 0 0;
+                            }
+
+                            &:last-child {
+                                border-radius: 0 0 10px 10px;
+                            }
+                        }
+                    }
+
+                    &__item {
+                        &:not(:last-child) {
+                            border-bottom: 1px solid #fff;
+                        }
+
+                        &:hover {
+                            background: #e8e8e8;
+
+                            & .sub-submenu__link {
+                                font-weight: 500;
+                            }
+                        }
+                    }
+
+                    &__link {
+                        display: block;
+                        padding: 10px 28px;
+                    }
+                }
+            }
+
+            &__link {
+                display: block;
+                padding: 10px 28px;
+            }
+        }
     }
 
     &__link {
         font-weight: 500;
-        color: #000;
         line-height: 121.43%;
     }
 }
+
 
 .contacts {
     &__list {

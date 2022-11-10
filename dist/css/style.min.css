@@ -114,10 +114,19 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 68px 0 0;
 }
 
+.menu__body a {
+  color: #000;
+}
 .menu__list {
   display: flex;
   position: relative;
   z-index: 2;
+}
+.menu__list > li:hover .submenu__list {
+  display: block;
+}
+.menu__list li {
+  position: relative;
 }
 .menu__item:not(:last-child) {
   margin: 0 40px 0 0;
@@ -129,14 +138,76 @@ h1, h2, h3, h4, h5, h6 {
   width: 20px;
   height: 16px;
   position: absolute;
-  top: -1px;
+  top: 0;
 }
 .menu__item:nth-child(1) .menu__link {
   margin: 0 0 0 28px;
 }
+.menu__item .submenu__list {
+  display: none;
+  padding: 20px 0 0 0;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  min-width: 200px;
+}
+.menu__item .submenu__list > li {
+  background: #f6f7f9;
+}
+.menu__item .submenu__list > li:first-child {
+  border-radius: 10px 10px 0 0;
+}
+.menu__item .submenu__list > li:last-child {
+  border-radius: 0 0 10px 10px;
+}
+.menu__item .submenu__list > li:hover .sub-submenu__list {
+  display: block;
+}
+.menu__item .submenu__item:not(:last-child) {
+  border-bottom: 1px solid #fff;
+}
+.menu__item .submenu__item:hover {
+  background: #e8e8e8;
+}
+.menu__item .submenu__item:hover .submenu__link {
+  font-weight: 500;
+}
+.menu__item .submenu__item .sub-submenu__list {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  min-width: 300px;
+  padding: 0 0 0 5px;
+}
+.menu__item .submenu__item .sub-submenu__list > li {
+  background: #f6f7f9;
+}
+.menu__item .submenu__item .sub-submenu__list > li:first-child {
+  border-radius: 10px 10px 0 0;
+}
+.menu__item .submenu__item .sub-submenu__list > li:last-child {
+  border-radius: 0 0 10px 10px;
+}
+.menu__item .submenu__item .sub-submenu__item:not(:last-child) {
+  border-bottom: 1px solid #fff;
+}
+.menu__item .submenu__item .sub-submenu__item:hover {
+  background: #e8e8e8;
+}
+.menu__item .submenu__item .sub-submenu__item:hover .sub-submenu__link {
+  font-weight: 500;
+}
+.menu__item .submenu__item .sub-submenu__link {
+  display: block;
+  padding: 10px 28px;
+}
+.menu__item .submenu__link {
+  display: block;
+  padding: 10px 28px;
+}
 .menu__link {
   font-weight: 500;
-  color: #000;
   line-height: 121.43%;
 }
 
