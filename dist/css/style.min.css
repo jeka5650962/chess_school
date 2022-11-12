@@ -128,20 +128,22 @@ h1, h2, h3, h4, h5, h6 {
 .menu__list li {
   position: relative;
 }
+.menu__item {
+  /*&:nth-child(1)::before {
+      content: '';
+      background: url("../img/header/all-courses.svg") 0 0 no-repeat;
+      display: inline-block;
+      width: 20px;
+      height: 16px;
+      position: absolute;
+      top: 0;
+  }*/
+}
 .menu__item:not(:last-child) {
   margin: 0 40px 0 0;
 }
-.menu__item:nth-child(1)::before {
-  content: "";
-  background: url("../img/header/all-courses.svg") 0 0 no-repeat;
-  display: inline-block;
-  width: 20px;
-  height: 16px;
-  position: absolute;
-  top: 0;
-}
 .menu__item:nth-child(1) .menu__link {
-  margin: 0 0 0 28px;
+  padding-right: 10px;
 }
 .menu__item .submenu__list {
   display: none;
@@ -210,6 +212,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   line-height: 121.43%;
 }
+.menu .arrow {
+  background: url("../img/header/arrow-bottom.svg") 0 0 no-repeat;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+}
 
 .contacts__list {
   display: flex;
@@ -238,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 12px;
   height: 12px;
   position: absolute;
-  top: 4px;
+  top: 5px;
 }
 .contacts__item:nth-child(3)::before {
   content: "";
