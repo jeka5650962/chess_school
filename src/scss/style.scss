@@ -31,13 +31,13 @@ body {
         .menu__list > li:hover .submenu__list {
             display: block;
         }
+
+        .submenu__list > li:hover .sub-submenu__list {
+            display: block;
+        }
     }
 
     &.touch {
-        .submenu__list.open {
-            display: block;
-        }
-
         .arrow {
             display: inline-block;
         }

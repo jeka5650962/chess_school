@@ -84,6 +84,10 @@
                 left: 0;
                 min-width: 200px;
 
+                &.open {
+                    display: block;
+                }
+
                 & > li {
                     background: #f6f7f9;
 
@@ -93,10 +97,6 @@
 
                     &:last-child {
                         border-radius: 0 0 10px 10px;
-                    }
-
-                    &:hover .sub-submenu__list {
-                        display: block;
                     }
                 }
             }
@@ -123,6 +123,10 @@
                         left: 100%;
                         min-width: 300px;
                         padding: 0 0 0 5px;
+
+                        &.open {
+                            display: block;
+                        }
 
                         & > li {
                             background: #f6f7f9;
@@ -167,8 +171,14 @@
 
             &__arrow {
                 position: absolute;
-                top: 13px;
-                left: 85%;
+                top: 11px;
+                left: 87%;
+                transform: rotate(-90deg);
+
+                &.active {
+                    left: 84%;
+                    transform: rotate(90deg);
+                }
             }
         }
     }
