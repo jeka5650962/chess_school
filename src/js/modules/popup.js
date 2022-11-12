@@ -99,12 +99,12 @@ export function popup() {
         }
     })
 
-    (function () {
+    /*(function () {
         // проверяем поддержку
         if (!Element.prototype.closest) {
             // реализуем
             Element.prototype.closest = function (css) {
-                var node = this
+                let node = this
                 while (node) {
                     if (node.matches(css)) return node
                     else node = node.parentElement
@@ -123,5 +123,5 @@ export function popup() {
                 Element.prototype.mozMatchesSelector ||
                 Element.prototype.msMatchesSelector
         }
-    })()
+    })()*/
 }
