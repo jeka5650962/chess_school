@@ -122,28 +122,14 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 2;
 }
-.menu__list > li:hover .submenu__list {
-  display: block;
-}
 .menu__list li {
   position: relative;
-}
-.menu__item {
-  /*&:nth-child(1)::before {
-      content: '';
-      background: url("../img/header/all-courses.svg") 0 0 no-repeat;
-      display: inline-block;
-      width: 20px;
-      height: 16px;
-      position: absolute;
-      top: 0;
-  }*/
 }
 .menu__item:not(:last-child) {
   margin: 0 40px 0 0;
 }
 .menu__item:nth-child(1) .menu__link {
-  padding-right: 10px;
+  padding-right: 12px;
 }
 .menu__item .submenu__list {
   display: none;
@@ -191,6 +177,9 @@ h1, h2, h3, h4, h5, h6 {
 .menu__item .submenu__item .sub-submenu__list > li:last-child {
   border-radius: 0 0 10px 10px;
 }
+.menu__item .submenu__item .sub-submenu__item {
+  position: relative;
+}
 .menu__item .submenu__item .sub-submenu__item:not(:last-child) {
   border-bottom: 1px solid #fff;
 }
@@ -205,20 +194,31 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 28px;
 }
 .menu__item .submenu__link {
-  display: block;
+  display: inline-block;
   padding: 10px 28px;
+}
+.menu__item .submenu__arrow {
+  position: absolute;
+  top: 13px;
+  left: 85%;
 }
 .menu__link {
   font-weight: 500;
   line-height: 121.43%;
 }
+.menu__arrow {
+  position: absolute;
+  top: 5px;
+}
+.menu__arrow.active {
+  transform: rotate(-180deg);
+  top: 0;
+}
 .menu .arrow {
+  display: none;
   background: url("../img/header/arrow-bottom.svg") 0 0 no-repeat;
   width: 12px;
   height: 12px;
-  display: inline-block;
-  position: absolute;
-  top: 5px;
 }
 
 .contacts__list {
@@ -2248,6 +2248,15 @@ body {
 }
 body.lock {
   overflow: hidden;
+}
+body.mouse .menu__list > li:hover .submenu__list {
+  display: block;
+}
+body.touch .submenu__list.open {
+  display: block;
+}
+body.touch .arrow {
+  display: inline-block;
 }
 
 .wrapper {

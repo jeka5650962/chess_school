@@ -26,6 +26,22 @@ body {
     &.lock {
         overflow: hidden;
     }
+
+    &.mouse {
+        .menu__list > li:hover .submenu__list {
+            display: block;
+        }
+    }
+
+    &.touch {
+        .submenu__list.open {
+            display: block;
+        }
+
+        .arrow {
+            display: inline-block;
+        }
+    }
 }
 
 .wrapper {
