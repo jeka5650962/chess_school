@@ -4,454 +4,454 @@
 "title":"Chess School"
 })
 <body>
-    <div class="wrapper">
-        @@include('html/header.html',{})
-        <main class="main">
-            <section class="banner">
-                <div class="banner__container">
-                    <div class="banner__body">
-                        <div class="banner__info">
-                            <h1 class="banner__title">Шахматная школа</h1>
-                            <div class="banner__desc">Развитие мышления и логики</div>
-                            <div class="banner__conditions conditions">
+<div class="wrapper">
+    @@include('html/header.html',{})
+    <main class="main">
+        <section class="banner">
+            <div class="banner__container">
+                <div class="banner__body">
+                    <div class="banner__info">
+                        <h1 class="banner__title">Шахматная школа</h1>
+                        <div class="banner__desc">Развитие мышления и логики</div>
+                        <div class="banner__conditions conditions">
+                            <div class="conditions__duration">Срок обучения:<br>5 лет</div>
+                            <div class="conditions__mode">Режим занятий:<br>2 раза в неделю по 2 академических часа
+                            </div>
+                        </div>
+                        <div class="banner__cost cost">
+                            <span>от 4 350 ₽ в месяц</span>
+                        </div>
+                        <div class="banner__bonus">1 занятие бесплатно</div>
+                        <div class="banner__recom">Прежде чем начать обучение советуем записаться на пробное занятие
+                        </div>
+                        <a class="banner__button button popup-link" href="#popup">Записаться на пробное занятие</a>
+                    </div>
+                    <div class="banner__image">
+                        <img src="img/section-banner/banner.jpg" alt="chess">
+                        <div class="banner__item banner__item--1"></div>
+                        <div class="banner__item banner__item--2"></div>
+                        <div class="banner__item banner__item--3"></div>
+                        <div class="banner__item banner__item--4"></div>
+                        <div class="banner__item banner__item--5"></div>
+                        <div class="banner__item banner__item--6"></div>
+                        <div class="banner__item banner__item--7"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="targets">
+            <div class="targets__container">
+                <div class="targets__listing">
+                    <div class="targets__item targets__item_1">
+                        <div class="targets__message">
+                            Вы полюбите шахматы, и вам этого будет не хватать всегда!
+                        </div>
+                    </div>
+                    <div class="targets__item targets__item_2">
+                        <div class="targets__title">Цель 1</div>
+                        <div class="targets__desc">Привить любовь и интерес к шахматам</div>
+                    </div>
+                    <div class="targets__item targets__item_3">
+                        <div class="targets__title">Цель 2</div>
+                        <div class="targets__desc">Получить удовольствие от процесса игры, от факта победы в партии, от
+                            спасения
+                        </div>
+                    </div>
+                    <div class="targets__item targets__item_4">
+                        <div class="targets__title">Цель 3</div>
+                        <div class="targets__desc">Научить анализировать свои и чужие ошибки, учиться на них с помощью
+                            GM мирового уровня
+                        </div>
+                    </div>
+                    <div class="targets__item targets__item_5">
+                        <div class="targets__title">Цель 4</div>
+                        <div class="targets__desc">Получить удовольствие от процесса игры, от факта победы в партии, от
+                            спасения
+                        </div>
+                    </div>
+                </div>
+                <div class="targets__video video">
+                    <div class="video__body">
+                        <video controls
+                               preload="metadata"
+                               poster="img/section-targets/poster-upd.jpg">
+                            <source src="files/chess.webm" type="video/webm">
+                            <source src="files/chess.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="video__item--1"></div>
+                    <div class="video__item--2"></div>
+                    <div class="video__item--3"></div>
+                    <div class="video__item--4"></div>
+                </div>
+                <h2 class="targets__main-title title-section">Школа шахмат</h2>
+                <p class="targets__main-desc desc-section">Шахматы - это отличная идея для времяпрепровождения с
+                    родителями, детьми и друзьями. Игра дает полезные в жизни навыки: учит побеждать и проигрывать,
+                    развивает творческие способности, вырабатывает стрессоустойчивость, терпение, помогает
+                    сосредоточиться, а так же помогает осознать последствия своих действий.
+                </p>
+                <div class="targets__benefits benefits">
+                    <div class="benefits__item benefits__item--1">
+                        Интересные уроки по шахматам
+                    </div>
+                    <div class="benefits__item benefits__item--2">
+                        Шахматы для взрослых и детей
+                    </div>
+                    <div class="benefits__item benefits__item--3">
+                        Обучение шахмат онлайн
+                    </div>
+                    <div class="benefits__item benefits__item--4">
+                        Профессиональное обучение шахматам
+                    </div>
+                    <div class="benefits__item benefits__item--5">
+                        Шахматные турниры
+                    </div>
+                    <div class="benefits__item benefits__item--6">
+                        Сеанс одновременной игры с GM
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="features">
+            <div class="features__container">
+                <div class="features__sqr"></div>
+                <div class="features__body">
+                    <div class="features__item">Шахматы могут помочь вам планировать наперед, не торопиться с решениями
+                        и взвешивать их плюсы и минусы.
+                    </div>
+                    <div class="features__item">Шахматами можно наслаждаться в любом возрасте - в результате, тренировка
+                        мозга может укреплять ваше здоровье.
+                    </div>
+                </div>
+                <div class="features__action">
+                    <a class="features__button button popup-link" href="#popup">Записаться на курс</a>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="content__container">
+                <div class="content__body">
+                    <h2 class="content__title-section title-section">Chess academy для школьников</h2>
+                    <p class="content__desc-section desc-section">Обеспечиваем индивидуальный подход к учащимся. В
+                        основе процесса обучения - тесное и открытое взаимодействие педагога и ученика. Обучение
+                        проходит по программе, созданной GM.
+                    </p>
+                    <div class="content__slider">
+                        <div class="slider swiper">
+                            <div class="slider__wrapper swiper-wrapper">
+                                <div class="slider__slide swiper-slide">
+                                    <div class="slider__image">
+                                        <img src="img/section-course/photo-1.jpg" alt="photo-1">
+                                    </div>
+                                </div>
+                                <div class="slider__slide swiper-slide">
+                                    <div class="slider__image">
+                                        <img src="img/section-course/photo-2.jpg" alt="photo-2">
+                                    </div>
+                                </div>
+                                <div class="slider__slide swiper-slide">
+                                    <div class="slider__image">
+                                        <img src="img/section-course/photo-3.jpg" alt="photo-3">
+                                    </div>
+                                </div>
+                                <div class="slider__slide swiper-slide">
+                                    <div class="slider__image">
+                                        <img src="img/section-course/photo-4.jpg" alt="photo-4">
+                                    </div>
+                                </div>
+                                <div class="slider__slide swiper-slide">
+                                    <div class="slider__image">
+                                        <img src="img/section-course/photo-5.jpg" alt="photo-5">
+                                    </div>
+                                </div>
+                                <div class="slider__slide swiper-slide">
+                                    <div class="slider__image">
+                                        <img src="img/section-course/photo-6.jpg" alt="photo-6">
+                                    </div>
+                                </div>
+                                <div class="slider__slide swiper-slide">
+                                    <div class="slider__image">
+                                        <img src="img/section-course/photo-7.jpg" alt="photo-7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="content__title-section title-section">Содержание курса</h2>
+                    <div class="content__desc-section">
+                        <p class="content__desc-info desc-section">Программа включает в себя изучение истории
+                            возникновения игры в шахматы, современные тенденции игры в онлайн-шахматы, знакомство со
+                            знаменитыми шахматистами прошлого и настоящего. Дети знакомятся с фигурами и правилами игры,
+                            узнают основные понятия, отрабатывая все в игровой практике. Дебют, мителльшпиль, эндшпиль,
+                            стратегия и тактика игры, особенности позиции – все это включено в первый год обучения, а
+                            пятилетний курс предполагает обучение ребенка до уровня КМС.
+                        </p>
+                        <div class="content__desc-image">
+                            <div class="content__desc-image_1">
+                                <img src="img/section-course/svg/chess-1.svg" alt="chess-1">
+                            </div>
+                            <div class="content__desc-image_2">
+                                <img src="img/section-course/svg/chess-2.svg" alt="chess-2">
+                            </div>
+                            <div class="content__desc-image_3">
+                                <img src="img/section-course/svg/chess-3.svg" alt="chess-3">
+                            </div>
+                            <div class="content__desc-image_4">
+                                <img src="img/section-course/svg/chess-4.svg" alt="chess-4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__row">
+                        <div class="content__info">
+                            <div class="content__conditions conditions">
                                 <div class="conditions__duration">Срок обучения:<br>5 лет</div>
                                 <div class="conditions__mode">Режим занятий:<br>2 раза в неделю по 2 академических часа
                                 </div>
                             </div>
-                            <div class="banner__cost cost">
+                            <div class="content__cost cost">
                                 <span>от 4 350 ₽ в месяц</span>
                             </div>
-                            <div class="banner__bonus">1 занятие бесплатно</div>
-                            <div class="banner__recom">Прежде чем начать обучение советуем записаться на пробное занятие
-                            </div>
-                            <a class="banner__button button popup-link" href="#popup">Записаться на пробное занятие</a>
+                            <a class="content__button button popup-link" href="#popup">Записаться на курс</a>
                         </div>
-                        <div class="banner__image">
-                            <img src="img/section-banner/banner.jpg" alt="chess">
-                            <div class="banner__item banner__item--1"></div>
-                            <div class="banner__item banner__item--2"></div>
-                            <div class="banner__item banner__item--3"></div>
-                            <div class="banner__item banner__item--4"></div>
-                            <div class="banner__item banner__item--5"></div>
-                            <div class="banner__item banner__item--6"></div>
-                            <div class="banner__item banner__item--7"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="targets">
-                <div class="targets__container">
-                    <div class="targets__listing">
-                        <div class="targets__item targets__item_1">
-                            <div class="targets__message">
-                                Вы полюбите шахматы, и вам этого будет не хватать всегда!
-                            </div>
-                        </div>
-                        <div class="targets__item targets__item_2">
-                            <div class="targets__title">Цель 1</div>
-                            <div class="targets__desc">Привить любовь и интерес к шахматам</div>
-                        </div>
-                        <div class="targets__item targets__item_3">
-                            <div class="targets__title">Цель 2</div>
-                            <div class="targets__desc">Получить удовольствие от процесса игры, от факта победы в партии, от
-                                спасения
-                            </div>
-                        </div>
-                        <div class="targets__item targets__item_4">
-                            <div class="targets__title">Цель 3</div>
-                            <div class="targets__desc">Научить анализировать свои и чужие ошибки, учиться на них с помощью
-                                GM мирового уровня
-                            </div>
-                        </div>
-                        <div class="targets__item targets__item_5">
-                            <div class="targets__title">Цель 4</div>
-                            <div class="targets__desc">Получить удовольствие от процесса игры, от факта победы в партии, от
-                                спасения
-                            </div>
-                        </div>
-                    </div>
-                    <div class="targets__video video">
-                        <div class="video__body">
-                            <video controls
-                                   preload="metadata"
-                                   poster="img/section-targets/poster-upd.jpg">
-                                <source src="files/chess.webm" type="video/webm">
-                                <source src="files/chess.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="video__item--1"></div>
-                        <div class="video__item--2"></div>
-                        <div class="video__item--3"></div>
-                        <div class="video__item--4"></div>
-                    </div>
-                    <h2 class="targets__main-title title-section">Школа шахмат</h2>
-                    <p class="targets__main-desc desc-section">Шахматы - это отличная идея для времяпрепровождения с
-                        родителями, детьми и друзьями. Игра дает полезные в жизни навыки: учит побеждать и проигрывать,
-                        развивает творческие способности, вырабатывает стрессоустойчивость, терпение, помогает
-                        сосредоточиться, а так же помогает осознать последствия своих действий.
-                    </p>
-                    <div class="targets__benefits benefits">
-                        <div class="benefits__item benefits__item--1">
-                            Интересные уроки по шахматам
-                        </div>
-                        <div class="benefits__item benefits__item--2">
-                            Шахматы для взрослых и детей
-                        </div>
-                        <div class="benefits__item benefits__item--3">
-                            Обучение шахмат онлайн
-                        </div>
-                        <div class="benefits__item benefits__item--4">
-                            Профессиональное обучение шахматам
-                        </div>
-                        <div class="benefits__item benefits__item--5">
-                            Шахматные турниры
-                        </div>
-                        <div class="benefits__item benefits__item--6">
-                            Сеанс одновременной игры с GM
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="features">
-                <div class="features__container">
-                    <div class="features__sqr"></div>
-                    <div class="features__body">
-                        <div class="features__item">Шахматы могут помочь вам планировать наперед, не торопиться с решениями
-                            и взвешивать их плюсы и минусы.
-                        </div>
-                        <div class="features__item">Шахматами можно наслаждаться в любом возрасте - в результате, тренировка
-                            мозга может укреплять ваше здоровье.
-                        </div>
-                    </div>
-                    <div class="features__action">
-                        <a class="features__button button popup-link" href="#popup">Записаться на курс</a>
-                    </div>
-                </div>
-            </section>
-            <section class="content">
-                <div class="content__container">
-                    <div class="content__body">
-                        <h2 class="content__title-section title-section">Chess academy для школьников</h2>
-                        <p class="content__desc-section desc-section">Обеспечиваем индивидуальный подход к учащимся. В
-                            основе процесса обучения - тесное и открытое взаимодействие педагога и ученика. Обучение
-                            проходит по программе, созданной GM.
-                        </p>
-                        <div class="content__slider">
-                            <div class="slider swiper">
-                                <div class="slider__wrapper swiper-wrapper">
-                                    <div class="slider__slide swiper-slide">
-                                        <div class="slider__image">
-                                            <img src="img/section-course/photo-1.jpg" alt="photo-1">
-                                        </div>
-                                    </div>
-                                    <div class="slider__slide swiper-slide">
-                                        <div class="slider__image">
-                                            <img src="img/section-course/photo-2.jpg" alt="photo-2">
-                                        </div>
-                                    </div>
-                                    <div class="slider__slide swiper-slide">
-                                        <div class="slider__image">
-                                            <img src="img/section-course/photo-3.jpg" alt="photo-3">
-                                        </div>
-                                    </div>
-                                    <div class="slider__slide swiper-slide">
-                                        <div class="slider__image">
-                                            <img src="img/section-course/photo-4.jpg" alt="photo-4">
-                                        </div>
-                                    </div>
-                                    <div class="slider__slide swiper-slide">
-                                        <div class="slider__image">
-                                            <img src="img/section-course/photo-5.jpg" alt="photo-5">
-                                        </div>
-                                    </div>
-                                    <div class="slider__slide swiper-slide">
-                                        <div class="slider__image">
-                                            <img src="img/section-course/photo-6.jpg" alt="photo-6">
-                                        </div>
-                                    </div>
-                                    <div class="slider__slide swiper-slide">
-                                        <div class="slider__image">
-                                            <img src="img/section-course/photo-7.jpg" alt="photo-7">
-                                        </div>
-                                    </div>
+                        <div class="content__image image-content">
+                            <div class="image-content__body">
+                                <div class="image-content__info">1 занятие бесплатно</div>
+                                <div class="image-content__message">
+                                    <img src="img/section-course/svg/message.svg" alt="message">
                                 </div>
-                            </div>
-                        </div>
-                        <h2 class="content__title-section title-section">Содержание курса</h2>
-                        <div class="content__desc-section">
-                            <p class="content__desc-info desc-section">Программа включает в себя изучение истории
-                                возникновения игры в шахматы, современные тенденции игры в онлайн-шахматы, знакомство со
-                                знаменитыми шахматистами прошлого и настоящего. Дети знакомятся с фигурами и правилами игры,
-                                узнают основные понятия, отрабатывая все в игровой практике. Дебют, мителльшпиль, эндшпиль,
-                                стратегия и тактика игры, особенности позиции – все это включено в первый год обучения, а
-                                пятилетний курс предполагает обучение ребенка до уровня КМС.
-                            </p>
-                            <div class="content__desc-image">
-                                <div class="content__desc-image_1">
-                                    <img src="img/section-course/svg/chess-1.svg" alt="chess-1">
-                                </div>
-                                <div class="content__desc-image_2">
-                                    <img src="img/section-course/svg/chess-2.svg" alt="chess-2">
-                                </div>
-                                <div class="content__desc-image_3">
-                                    <img src="img/section-course/svg/chess-3.svg" alt="chess-3">
-                                </div>
-                                <div class="content__desc-image_4">
-                                    <img src="img/section-course/svg/chess-4.svg" alt="chess-4">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content__row">
-                            <div class="content__info">
-                                <div class="content__conditions conditions">
-                                    <div class="conditions__duration">Срок обучения:<br>5 лет</div>
-                                    <div class="conditions__mode">Режим занятий:<br>2 раза в неделю по 2 академических часа
-                                    </div>
-                                </div>
-                                <div class="content__cost cost">
-                                    <span>от 4 350 ₽ в месяц</span>
-                                </div>
-                                <a class="content__button button popup-link" href="#popup">Записаться на курс</a>
-                            </div>
-                            <div class="content__image image-content">
-                                <div class="image-content__body">
-                                    <div class="image-content__info">1 занятие бесплатно</div>
-                                    <div class="image-content__message">
-                                        <img src="img/section-course/svg/message.svg" alt="message">
-                                    </div>
-                                    <div class="image-content__owl">
-                                        <img src="img/section-course/owl.png" alt="owl-2">
-                                    </div>
+                                <div class="image-content__owl">
+                                    <img src="img/section-course/owl.png" alt="owl-2">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="educator">
-                <div class="educator__container">
-                    <h2 class="educator__title">Наши преподаватели</h2>
-                    <div class="educator__body">
-                        <div class="educator__elements educator__elements_1"></div>
-                        <div class="educator__elements educator__elements_2"></div>
-                        <div class="educator__elements educator__elements_3"></div>
-                        <div class="educator__elements educator__elements_4"></div>
-                        <div class="educator__elements educator__elements_5"></div>
-                        <div class="educator__items">
-                            <div class="educator__column">
-                                <div class="educator__item item-educator">
-                                    <div class="item-educator__photo">
-                                        <div class="item-educator__elem"></div>
-                                        <div class="item-educator__image">
-                                            <img src="img/section-educator/photo-1.jpg" alt="photo-1">
-                                        </div>
-                                    </div>
-                                    <div class="item-educator__name">Молотилова Ольга</div>
-                                    <div class="item-educator__desc">Многократная чемпионка по шахматам. Кандидат в мастера
-                                        спорта по шахматам, 2010 г.
+            </div>
+        </section>
+        <section class="educator">
+            <div class="educator__container">
+                <h2 class="educator__title">Наши преподаватели</h2>
+                <div class="educator__body">
+                    <div class="educator__elements educator__elements_1"></div>
+                    <div class="educator__elements educator__elements_2"></div>
+                    <div class="educator__elements educator__elements_3"></div>
+                    <div class="educator__elements educator__elements_4"></div>
+                    <div class="educator__elements educator__elements_5"></div>
+                    <div class="educator__items">
+                        <div class="educator__column">
+                            <div class="educator__item item-educator">
+                                <div class="item-educator__photo">
+                                    <div class="item-educator__elem"></div>
+                                    <div class="item-educator__image">
+                                        <img src="img/section-educator/photo-1.jpg" alt="photo-1">
                                     </div>
                                 </div>
-                            </div>
-                            <div class="educator__column">
-                                <div class="educator__item item-educator">
-                                    <div class="item-educator__photo">
-                                        <div class="item-educator__elem"></div>
-                                        <div class="item-educator__image">
-                                            <img src="img/section-educator/photo-2.jpg" alt="photo-2">
-                                        </div>
-                                    </div>
-                                    <div class="item-educator__name">Сташис Анна</div>
-                                    <div class="item-educator__desc">Неоднократный победитель и призер первенств Беларуси
-                                        среди
-                                        девушек
-                                    </div>
+                                <div class="item-educator__name">Молотилова Ольга</div>
+                                <div class="item-educator__desc">Многократная чемпионка по шахматам. Кандидат в мастера
+                                    спорта по шахматам, 2010 г.
                                 </div>
                             </div>
-                            <div class="educator__column">
-                                <div class="educator__item item-educator">
-                                    <div class="item-educator__photo">
-                                        <div class="item-educator__elem"></div>
-                                        <div class="item-educator__image">
-                                            <img src="img/section-educator/photo-3.jpg" alt="photo-3">
-                                        </div>
-                                    </div>
-                                    <div class="item-educator__name">Михаил Бернс</div>
-                                    <div class="item-educator__desc">Многократный призёр и чемпион РБ по шахматам, а также
-                                        различных международных соревнований.
+                        </div>
+                        <div class="educator__column">
+                            <div class="educator__item item-educator">
+                                <div class="item-educator__photo">
+                                    <div class="item-educator__elem"></div>
+                                    <div class="item-educator__image">
+                                        <img src="img/section-educator/photo-2.jpg" alt="photo-2">
                                     </div>
                                 </div>
+                                <div class="item-educator__name">Сташис Анна</div>
+                                <div class="item-educator__desc">Неоднократный победитель и призер первенств Беларуси
+                                    среди
+                                    девушек
+                                </div>
                             </div>
-                            <div class="educator__column">
-                                <div class="educator__item item-educator">
-                                    <div class="item-educator__photo">
-                                        <div class="item-educator__elem"></div>
-                                        <div class="item-educator__image">
-                                            <img src="img/section-educator/photo-4.jpg" alt="photo-4">
-                                        </div>
+                        </div>
+                        <div class="educator__column">
+                            <div class="educator__item item-educator">
+                                <div class="item-educator__photo">
+                                    <div class="item-educator__elem"></div>
+                                    <div class="item-educator__image">
+                                        <img src="img/section-educator/photo-3.jpg" alt="photo-3">
                                     </div>
-                                    <div class="item-educator__name">Вадим Волков</div>
-                                    <div class="item-educator__desc">Выпускник Гарвардского Университета. Более 10 лет
-                                        играет в
-                                        шахматы и участвует в турнирах.
+                                </div>
+                                <div class="item-educator__name">Михаил Бернс</div>
+                                <div class="item-educator__desc">Многократный призёр и чемпион РБ по шахматам, а также
+                                    различных международных соревнований.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="educator__column">
+                            <div class="educator__item item-educator">
+                                <div class="item-educator__photo">
+                                    <div class="item-educator__elem"></div>
+                                    <div class="item-educator__image">
+                                        <img src="img/section-educator/photo-4.jpg" alt="photo-4">
                                     </div>
+                                </div>
+                                <div class="item-educator__name">Вадим Волков</div>
+                                <div class="item-educator__desc">Выпускник Гарвардского Университета. Более 10 лет
+                                    играет в
+                                    шахматы и участвует в турнирах.
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="faq">
-                <div class="faq__container">
-                    <div class="faq__title">Найдите ответ на свой вопрос</div>
-                    <div class="faq__block">
-                        <div class="faq__item">
-                            <div class="faq__content">
-                                <div class="faq__question">Кому подойдет этот курс?</div>
-                                <div class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                                    dignissim, neque sit amet aliquam cursus, ante urna porta mauris, eget venenatis risus
-                                    turpis ac nisl. Aenean blandit, nulla tincidunt efficitur placerat, ante nisl auctor
-                                    ipsum, in auctor mauris lacus sed nibh. Quisque id imperdiet metus, non semper dui.
-                                    Phasellus pellentesque vitae leo in dapibus. Class aptent taciti sociosqu ad litora
-                                    torquent per conubia nostra, per inceptos himenaeos. Suspendisse id aliquam nunc. Sed
-                                    dignissim, nibh quis dapibus dapibus, ex sapien ultricies leo, sit amet placerat arcu
-                                    sem id sem.
-                                </div>
+            </div>
+        </section>
+        <section class="faq">
+            <div class="faq__container">
+                <div class="faq__title">Найдите ответ на свой вопрос</div>
+                <div class="faq__block">
+                    <div class="faq__item">
+                        <div class="faq__content">
+                            <div class="faq__question">Кому подойдет этот курс?</div>
+                            <div class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                                dignissim, neque sit amet aliquam cursus, ante urna porta mauris, eget venenatis risus
+                                turpis ac nisl. Aenean blandit, nulla tincidunt efficitur placerat, ante nisl auctor
+                                ipsum, in auctor mauris lacus sed nibh. Quisque id imperdiet metus, non semper dui.
+                                Phasellus pellentesque vitae leo in dapibus. Class aptent taciti sociosqu ad litora
+                                torquent per conubia nostra, per inceptos himenaeos. Suspendisse id aliquam nunc. Sed
+                                dignissim, nibh quis dapibus dapibus, ex sapien ultricies leo, sit amet placerat arcu
+                                sem id sem.
                             </div>
-                            <div class="faq__gradient gradient"></div>
                         </div>
-                        <div class="faq__item">
-                            <div class="faq__content">
-                                <div class="faq__question">Что нужно ребенку для занятий?</div>
-                                <div class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                                    dignissim, neque sit amet aliquam cursus, ante urna porta mauris, eget venenatis risus
-                                    turpis ac nisl. Aenean blandit, nulla tincidunt efficitur placerat, ante nisl auctor
-                                    ipsum, in auctor mauris lacus sed nibh. Quisque id imperdiet metus, non semper dui.
-                                    Phasellus pellentesque vitae leo in dapibus. Class aptent taciti sociosqu ad litora
-                                    torquent per conubia nostra, per inceptos himenaeos. Suspendisse id aliquam nunc. Sed
-                                    dignissim, nibh quis dapibus dapibus, ex sapien ultricies leo, sit amet placerat arcu
-                                    sem id sem.
-                                </div>
-                            </div>
-                            <div class="faq__gradient gradient"></div>
-                        </div>
-                        <div class="faq__item">
-                            <div class="faq__content">
-                                <div class="faq__question">Где можно узнать расписание занятий?</div>
-                                <div class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                                    dignissim, neque sit amet aliquam cursus, ante urna porta mauris, eget venenatis risus
-                                    turpis ac nisl. Aenean blandit, nulla tincidunt efficitur placerat, ante nisl auctor
-                                    ipsum, in auctor mauris lacus sed nibh. Quisque id imperdiet metus, non semper dui.
-                                    Phasellus pellentesque vitae leo in dapibus. Class aptent taciti sociosqu ad litora
-                                    torquent per conubia nostra, per inceptos himenaeos. Suspendisse id aliquam nunc. Sed
-                                    dignissim, nibh quis dapibus dapibus, ex sapien ultricies leo, sit amet placerat arcu
-                                    sem id sem.
-                                </div>
-                            </div>
-                            <div class="faq__gradient gradient"></div>
-                        </div>
-                        <div class="faq__item">
-                            <div class="faq__content">
-                                <div class="faq__question">Что делать, если ребенок пропустил занятие?</div>
-                                <div class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                                    dignissim, neque sit amet aliquam cursus, ante urna porta mauris, eget venenatis risus
-                                    turpis ac nisl. Aenean blandit, nulla tincidunt efficitur placerat, ante nisl auctor
-                                    ipsum, in auctor mauris lacus sed nibh. Quisque id imperdiet metus, non semper dui.
-                                    Phasellus pellentesque vitae leo in dapibus. Class aptent taciti sociosqu ad litora
-                                    torquent per conubia nostra, per inceptos himenaeos. Suspendisse id aliquam nunc. Sed
-                                    dignissim, nibh quis dapibus dapibus, ex sapien ultricies leo, sit amet placerat arcu
-                                    sem id sem.
-                                </div>
-                            </div>
-                            <div class="faq__gradient gradient"></div>
-                        </div>
-                        <div class="faq__elements faq__elements_1"></div>
-                        <div class="faq__elements faq__elements_2"></div>
-                        <div class="faq__elements faq__elements_3"></div>
+                        <div class="faq__gradient gradient"></div>
                     </div>
+                    <div class="faq__item">
+                        <div class="faq__content">
+                            <div class="faq__question">Что нужно ребенку для занятий?</div>
+                            <div class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                                dignissim, neque sit amet aliquam cursus, ante urna porta mauris, eget venenatis risus
+                                turpis ac nisl. Aenean blandit, nulla tincidunt efficitur placerat, ante nisl auctor
+                                ipsum, in auctor mauris lacus sed nibh. Quisque id imperdiet metus, non semper dui.
+                                Phasellus pellentesque vitae leo in dapibus. Class aptent taciti sociosqu ad litora
+                                torquent per conubia nostra, per inceptos himenaeos. Suspendisse id aliquam nunc. Sed
+                                dignissim, nibh quis dapibus dapibus, ex sapien ultricies leo, sit amet placerat arcu
+                                sem id sem.
+                            </div>
+                        </div>
+                        <div class="faq__gradient gradient"></div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__content">
+                            <div class="faq__question">Где можно узнать расписание занятий?</div>
+                            <div class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                                dignissim, neque sit amet aliquam cursus, ante urna porta mauris, eget venenatis risus
+                                turpis ac nisl. Aenean blandit, nulla tincidunt efficitur placerat, ante nisl auctor
+                                ipsum, in auctor mauris lacus sed nibh. Quisque id imperdiet metus, non semper dui.
+                                Phasellus pellentesque vitae leo in dapibus. Class aptent taciti sociosqu ad litora
+                                torquent per conubia nostra, per inceptos himenaeos. Suspendisse id aliquam nunc. Sed
+                                dignissim, nibh quis dapibus dapibus, ex sapien ultricies leo, sit amet placerat arcu
+                                sem id sem.
+                            </div>
+                        </div>
+                        <div class="faq__gradient gradient"></div>
+                    </div>
+                    <div class="faq__item">
+                        <div class="faq__content">
+                            <div class="faq__question">Что делать, если ребенок пропустил занятие?</div>
+                            <div class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                                dignissim, neque sit amet aliquam cursus, ante urna porta mauris, eget venenatis risus
+                                turpis ac nisl. Aenean blandit, nulla tincidunt efficitur placerat, ante nisl auctor
+                                ipsum, in auctor mauris lacus sed nibh. Quisque id imperdiet metus, non semper dui.
+                                Phasellus pellentesque vitae leo in dapibus. Class aptent taciti sociosqu ad litora
+                                torquent per conubia nostra, per inceptos himenaeos. Suspendisse id aliquam nunc. Sed
+                                dignissim, nibh quis dapibus dapibus, ex sapien ultricies leo, sit amet placerat arcu
+                                sem id sem.
+                            </div>
+                        </div>
+                        <div class="faq__gradient gradient"></div>
+                    </div>
+                    <div class="faq__elements faq__elements_1"></div>
+                    <div class="faq__elements faq__elements_2"></div>
+                    <div class="faq__elements faq__elements_3"></div>
                 </div>
-            </section>
-            <section class="form-section">
-                <div class="form-section__container">
-                    <div class="form-section__wrapper">
-                        <div class="form-section__body">
-                            <div class="form-section__left">
-                                <div class="form-section__image">
-                                    <div class="form-section__image-text image-text">
-                                        <div class="image-text__title">Запись на курс уже открыта</div>
-                                        <div class="image-text__subtitle">Оставьте заявку и наши специалисты свяжутся с
-                                            вами, ответят на все вопросы и зарегистрируют вас на обучение
-                                        </div>
+            </div>
+        </section>
+        <section class="form-section">
+            <div class="form-section__container">
+                <div class="form-section__wrapper">
+                    <div class="form-section__body">
+                        <div class="form-section__left">
+                            <div class="form-section__image">
+                                <div class="form-section__image-text image-text">
+                                    <div class="image-text__title">Запись на курс уже открыта</div>
+                                    <div class="image-text__subtitle">Оставьте заявку и наши специалисты свяжутся с
+                                        вами, ответят на все вопросы и зарегистрируют вас на обучение
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-section__right">
-                                <div class="form">
-                                    <form action="#" id="form" class="form__body">
-                                        <div class="form__item">
-                                            <input id="formName" type="text" name="name" class="form__input _req"
-                                                   placeholder=" " autocomplete="off" required>
-                                            <label for="formName" class="form__label">Ваше имя <span>*</span></label>
-                                        </div>
-                                        <div class="form__item">
-                                            <input id="formPhone" type="text" name="phone" class="form__input _req"
-                                                   placeholder=" " autocomplete="off" required>
-                                            <label for="formPhone" class="form__label">Ваш телефон <span>*</span></label>
-                                        </div>
-                                        <div class="form__item">
-                                            <input id="formEmail" type="text" name="email" class="form__input _req _email"
-                                                   placeholder=" " autocomplete="off" required>
-                                            <label for="formEmail" class="form__label">Ваш email <span>*</span></label>
-                                        </div>
-                                        <div class="form__info">Нажимая на кнопку, я соглашаюсь на обработку персональных
-                                            данных и с правилами пользования Платформой
-                                        </div>
-                                        <div class="form__button-wrapper">
-                                            <button class="form__button" type="submit">Отправить</button>
-                                        </div>
-                                    </form>
-                                </div>
+                        </div>
+                        <div class="form-section__right">
+                            <div class="form">
+                                <form action="#" id="form" class="form__body">
+                                    <div class="form__item">
+                                        <input id="formName" type="text" name="name" class="form__input _req"
+                                               placeholder=" " autocomplete="off" required>
+                                        <label for="formName" class="form__label">Ваше имя <span>*</span></label>
+                                    </div>
+                                    <div class="form__item">
+                                        <input id="formPhone" type="text" name="phone" class="form__input _req"
+                                               placeholder=" " autocomplete="off" required>
+                                        <label for="formPhone" class="form__label">Ваш телефон <span>*</span></label>
+                                    </div>
+                                    <div class="form__item">
+                                        <input id="formEmail" type="text" name="email" class="form__input _req _email"
+                                               placeholder=" " autocomplete="off" required>
+                                        <label for="formEmail" class="form__label">Ваш email <span>*</span></label>
+                                    </div>
+                                    <div class="form__info">Нажимая на кнопку, я соглашаюсь на обработку персональных
+                                        данных и с правилами пользования Платформой
+                                    </div>
+                                    <div class="form__button-wrapper">
+                                        <button class="form__button" type="submit">Отправить</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-        @@include('html/footer.html',{})
-    </div>
-    <div id="popup" class="popup">
-        <div class="popup__body">
-            <div class="popup__content">
-                <a href="#header" class="popup__close close-popup"></a>
-                <div class="popup__title">Запись на курс</div>
-                <div class="popup__text">Через некоторое время с вами свяжется менеджер</div>
-                <div class="popup__form form">
-                    <form action="#" id="form" class="form__body">
-                        <div class="form__item">
-                            <input id="formName" type="text" name="name" class="form__input _req"
-                                   placeholder=" " autocomplete="off" required>
-                            <label for="formName" class="form__label">Ваше имя <span>*</span></label>
-                        </div>
-                        <div class="form__item">
-                            <input id="formPhone" type="text" name="phone" class="form__input _req"
-                                   placeholder=" " autocomplete="off" required>
-                            <label for="formPhone" class="form__label">Ваш телефон <span>*</span></label>
-                        </div>
-                        <div class="form__item">
-                            <input id="formEmail" type="text" name="email" class="form__input _req _email"
-                                   placeholder=" " autocomplete="off" required>
-                            <label for="formEmail" class="form__label">Ваш email <span>*</span></label>
-                        </div>
-                        <div class="form__info">Нажимая на кнопку, я соглашаюсь на обработку персональных
-                            данных и с правилами пользования Платформой
-                        </div>
-                        <div class="form__button-wrapper">
-                            <button class="form__button" type="submit">Отправить</button>
-                        </div>
-                    </form>
-                </div>
+            </div>
+        </section>
+    </main>
+    @@include('html/footer.html',{})
+</div>
+<div id="popup" class="popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <a href="#header" class="popup__close close-popup"></a>
+            <div class="popup__title">Запись на курс</div>
+            <div class="popup__text">Через некоторое время с вами свяжется менеджер</div>
+            <div class="popup__form form">
+                <form action="#" id="form-popup" class="form__body">
+                    <div class="form__item">
+                        <input id="formName-popup" type="text" name="name" class="form__input _req"
+                               placeholder=" " autocomplete="off" required>
+                        <label for="formName-popup" class="form__label">Ваше имя <span>*</span></label>
+                    </div>
+                    <div class="form__item">
+                        <input id="formPhone-popup" type="text" name="phone" class="form__input _req"
+                               placeholder=" " autocomplete="off" required>
+                        <label for="formPhone-popup" class="form__label">Ваш телефон <span>*</span></label>
+                    </div>
+                    <div class="form__item">
+                        <input id="formEmail-popup" type="text" name="email" class="form__input _req _email"
+                               placeholder=" " autocomplete="off" required>
+                        <label for="formEmail-popup" class="form__label">Ваш email <span>*</span></label>
+                    </div>
+                    <div class="form__info">Нажимая на кнопку, я соглашаюсь на обработку персональных
+                        данных и с правилами пользования Платформой
+                    </div>
+                    <div class="form__button-wrapper">
+                        <button class="form__button" type="submit">Отправить</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    <script src="js/app.min.js"></script>
+</div>
+<script src="js/app.min.js"></script>
 </body>
 </html>
