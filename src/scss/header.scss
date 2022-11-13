@@ -375,6 +375,34 @@
             &:not(:last-child) {
                 margin: 0 0 30px 0;
             }
+
+            .submenu__list {
+                position: relative;
+                top: 0;
+                left: 0;
+                max-width: 250px;
+                min-width: auto;
+
+                .sub-submenu__list {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    max-width: 250px;
+                    min-width: auto;
+                    padding: 0 10px 10px 10px;
+                }
+            }
+
+            .submenu__arrow {
+                transform: rotate(0deg);
+                top: 13px;
+
+                &.active {
+                    transform: rotate(180deg);
+                    left: 87%;
+                    top: 8px;
+                }
+            }
         }
     }
     .contacts {
