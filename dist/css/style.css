@@ -374,6 +374,30 @@ h1, h2, h3, h4, h5, h6 {
   .menu__item:not(:last-child) {
     margin: 0 0 30px 0;
   }
+  .menu__item .submenu__list {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 360px;
+    min-width: auto;
+  }
+  .menu__item .submenu__list .sub-submenu__list {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 360px;
+    min-width: auto;
+    padding: 0 10px 10px 10px;
+  }
+  .menu__item .submenu__arrow {
+    transform: rotate(0deg);
+    top: 13px;
+  }
+  .menu__item .submenu__arrow.active {
+    transform: rotate(180deg);
+    left: 87%;
+    top: 8px;
+  }
   .contacts__list {
     flex-direction: column;
   }
