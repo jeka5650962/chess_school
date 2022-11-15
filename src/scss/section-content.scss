@@ -118,9 +118,13 @@
         }
 
         &__owl {
+            background: url("../img/svg/owl.svg") 0 0 no-repeat;
+            width: 196px;
+            height: 220px;
+            transform: scale(-1, 1);
             position: absolute;
             top: 30px;
-            right: 0;
+            right: 30px;
         }
     }
 }
@@ -224,14 +228,6 @@
                     width: 316px;
                 }
             }
-
-            &__owl {
-                top: 0;
-
-                img {
-                    width: 176px;
-                }
-            }
         }
     }
 }
@@ -274,11 +270,8 @@
             }
 
             &__owl {
-                top: 85px;
-
-                img {
-                    width: 156px;
-                }
+                top: 80px;
+                scale: .8;
             }
         }
     }
@@ -325,12 +318,7 @@
             }
 
             &__owl {
-                top: 95px;
                 right: 0;
-
-                img {
-                    width: 137px;
-                }
             }
         }
     }
