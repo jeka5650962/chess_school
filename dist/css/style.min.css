@@ -721,7 +721,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .targets__item_1::after {
   content: "";
-  background: url("../img/section-targets/owl.png") 0 0 no-repeat;
+  background: url("../img/svg/owl.svg") 0 0 no-repeat;
   width: 168px;
   height: 189px;
   display: block;
